@@ -1,0 +1,36 @@
+{
+    "en": {
+        "sidebar": {
+            "about": "About",
+            "music": "Music",
+            "shows": "Shows",
+            "contact": "Contact"
+        }, 
+        "about_page": {
+            "title": "About brankam",
+            "text" : "brankam is a multi-faceted artist that hopes to bridge his talents together into something that anyone can enjoy. A keyboardist, singer-songwriter, rapper, and producer all bundled into one, he began writing his own music at 11. Never fully settling on one genre, it’s been an arduous yet rewarding journey to mix his passions for groovy beats, witty wordplay, heartfelt lyrics, and jazz-driven chords into a uniquely concocted style years in the making.\nHe is trilingual with aspirations to be a hyperpolyglot, taking influence from all around the world through artists old and new (e.g. Frah Quintale, Davide Shorty, Daft Punk, Stromae, Fujii Kaze, Salvador Sobral, Tom Jobim, mor ve ötesi) - and currently has songs written in Spanish and Italian in addition to his native English. He only hopes to grow this catalog along with his language skills, and maybe one day he’ll be able to greet you in your mother tongue!\nEnglish-speaking artists including Lawrence, Chromeo, Kaytranada, Childish Gambino, Jacob Collier, A Tribe Called Quest, Tom Misch, Anderson .Paak, Franc Moody, and The Internet have also all had substantial influence on his music.\nAs someone who seeks to truly understand the people of this giant globe we call home,  brankam hopes to spread his one-of-a-kind approach to music to every corner of the world - that his music touches your soul in whatever language you speak or genre you enjoy."
+        }
+    },
+    "es": {
+        "sidebar": {
+            "about": "Sobre mi",
+            "music": "Música",
+            "shows": "Actuaciones",
+            "contact": "Contáctame"
+        }, 
+        "about_page": {
+            "text" : "Brankam es un"
+        }
+    },
+    "it": {
+        "sidebar": {
+            "about": "Sull'artista",
+            "music": "Musica",
+            "shows": "Spettacoli",
+            "contact": "Contattami"
+        }, 
+        "about_page": {
+            "text" : "Brankam,, un artista americano..."
+        }
+    }
+}
