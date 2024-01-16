@@ -6,7 +6,7 @@ export default function Contact(props) {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const legalEmail = subject.trim().length > 0 && message.trim().length > 0;
-   
+
   const link = data[`${lang}`].contact_page.link.split("|");
 
   return (
@@ -18,14 +18,20 @@ export default function Contact(props) {
         value={subject}
         onChange={(e) => setSubject(e.target.value)}
         placeholder={data[`${lang}`].contact_page.subject}
-        className={"w-full p-1 mt-2 rounded-xl text-slate-900 " + (!subject.trim() && 'border-red-500 border-2')}
+        className={
+          "w-full md:w-3/4 p-1 mt-2 rounded-xl text-slate-900 " +
+          (!subject.trim() && "border-red-500 border-2")
+        }
       />
       <textarea
         value={message}
         onChange={(e) => setMessage(e.target.value)}
         rows="5"
         placeholder={data[`${lang}`].contact_page.message}
-        className={"w-full p-1 mt-2 rounded-xl text-slate-900 resize-vertical " + (!message.trim() && 'border-red-500 border-2')}
+        className={
+          "w-full md:w-3/4 p-1 mt-2 rounded-xl text-slate-900 resize-vertical " +
+          (!message.trim() && "border-red-500 border-2")
+        }
       />
       <a
         href={
@@ -33,7 +39,7 @@ export default function Contact(props) {
             ? `mailto:linguafrancamusic1@gmail.com?subject=${subject}&body=${message}`
             : "#"
         }
-        className="w-full px-2 my-2 text-center transition-colors duration-200 ease-in-out bg-yellow-500 rounded-lg hover:cursor-pointer text-slate-900 hover:text-yellow-500 hover:bg-slate-800"
+        className="w-full md:w-3/4 px-2 my-2 text-center transition-colors duration-200 ease-in-out bg-yellow-500 rounded-lg hover:cursor-pointer text-slate-900 hover:text-yellow-500 hover:bg-slate-800"
       >
         {data[`${lang}`].contact_page.submit}
       </a>

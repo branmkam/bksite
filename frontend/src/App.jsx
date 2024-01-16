@@ -36,7 +36,7 @@ function App() {
             key={"lang-" + l}
             className={
               "z-0 text-sm transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer m-1 " +
-              (lang == l && "text-red-400")
+              (lang == l && "text-red-500")
             }
             onClick={() => setLang(l)}
           >
@@ -46,7 +46,7 @@ function App() {
       </div>
 
       {/* mobile pseudo top menu */}
-      <div className="fixed top-0 w-full h-16 bg-black md:bg-transparent"></div>
+      <div className="fixed top-0 w-full h-16 bg-black md:hidden"></div>
 
       {/* side homepage */}
       <p className="fixed z-20 flex flex-col justify-start h-full mt-1 md:mt-0 md:justify-center left-1">
@@ -58,7 +58,7 @@ function App() {
       </p>
 
       {/* side menu */}
-      <div className="fixed z-0 grid text-center text-sm justify-between grid-cols-2 mt-1 pl-16 gap-x-2 gap-y-0.5 md:my-2 min-[500px]:flex min-[500px]:mt-4 min-[500px]:gap-4 md:p-0 min-[500px]:flex-row md:flex md:flex-col md:gap-0 md:justify-center md:h-full md:m-2 md:text-right md:text-lg md:right-2">
+      <div className="fixed z-0 grid text-center text-sm justify-between grid-cols-2 mt-1 pl-16 gap-x-2 gap-y-0.5 md:my-2 min-[500px]:flex min-[500px]:mt-4 min-[500px]:gap-4 md:p-0 min-[500px]:flex-row md:flex md:flex-col md:gap-0 md:justify-center md:h-full md:m-1 md:text-right md:text-lg md:right-2">
         <p
           //flex flex-col justify-center h-full m-1 text-sm text-right tabs md:text-lg md:right-2
           //md:flex md:flex-col md:justify-center md:h-full md:m-2 text-sm md:text-right md:text-lg md:right-2
@@ -108,7 +108,7 @@ function App() {
       </div>
 
       {/* footer */}
-      <div className="fixed bottom-0 z-40 flex flex-col justify-end w-full h-8 p-2 text-sm text-center bg-black md:bg-transparent md:text-right">
+      <div className="fixed bottom-0 z-40 flex flex-col justify-end w-full h-8 p-2 text-sm text-center bg-black md:text-right">
         <p>&copy; 2024 brankam</p>
       </div>
 
