@@ -52,7 +52,7 @@ function App() {
       <p className="fixed z-20 flex flex-col justify-start h-full mt-1 md:mt-0 md:justify-center left-1">
         <img
           src="brankambubbleonlyvector.png"
-          className="h-12 md:h-16 hover:brightness-125 hover:cursor-pointer"
+          className="w-14 md:w-28 hover:brightness-125 hover:cursor-pointer"
           onClick={() => setPage(0)}
         />
       </p>
