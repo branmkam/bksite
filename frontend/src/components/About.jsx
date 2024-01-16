@@ -8,11 +8,11 @@ export default function About(props) {
   let facts = data[`${lang}`].about_page.fast_facts;
   
   return (
-    <div className="my-2 z-20">
-      <h1 className="md:text-lg text-xl font-bold my-2">
+    <div className="z-20 pb-8 mt-2 pt-14 md:py-0">
+      <h1 className="my-2 text-xl font-bold md:text-lg">
         {data[`${lang}`].about_page.fast_facts_title}
       </h1>
-      <div className="bg-yellow-600 rounded-xl p-2 text-black grid text-sm grid-cols-1 md:grid-cols-2 gap-2 justify-between">
+      <div className="grid justify-between grid-cols-1 gap-2 p-2 text-sm text-black bg-yellow-600 rounded-xl md:grid-cols-2">
         {facts.map((f) => {
           let fs = f.split(":");
           return (
@@ -25,7 +25,7 @@ export default function About(props) {
       </div>
 
       {/* bio */}
-      <h1 className="md:text-lg text-xl font-bold my-2">
+      <h1 className="my-2 text-xl font-bold md:text-lg">
         {data[`${lang}`].about_page.bio_title}
       </h1>
 
