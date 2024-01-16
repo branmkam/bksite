@@ -10,13 +10,13 @@ export default function Music(props) {
   //top 6 newest releases
   let timeCatalog = catalog
     .sort((a, b) => new Date(b.release_date) - new Date(a.release_date))
-    .slice(0, 6);
+    .slice(0,6);
 
   return (
     <div className="z-20 flex flex-col justify-center w-full h-full pb-8 my-2 pt-14 md:py-0">
-      <p className="my-2 text-lg font-bold md:text-xl">Newest Releases</p>
-      <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 ">
-        {timeCatalog.map((c) => (
+      <p className="my-2 text-lg font-bold md:text-xl">{data[`${lang}`].music_page.newest_title}</p>
+      <div className="grid grid-cols-1 pb-8 gap-2 md:grid-cols-2 lg:grid-cols-3">
+        {timeCatalog.length > 0 ? timeCatalog.map((c) => (
           <div
             key={"div" + c.name}
             className={
@@ -62,7 +62,7 @@ export default function Music(props) {
               ))}
             </span>
           </div>
-        ))}
+        )): <p className="w-full text-lg">{data[`${lang}`].utils.arent_any}</p>}
       </div>
     </div>
   );

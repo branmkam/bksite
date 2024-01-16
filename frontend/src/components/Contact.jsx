@@ -19,8 +19,8 @@ export default function Contact(props) {
         onChange={(e) => setSubject(e.target.value)}
         placeholder={data[`${lang}`].contact_page.subject}
         className={
-          "w-full md:w-3/4 p-1 mt-2 rounded-xl text-slate-900 " +
-          (!subject.trim() && "border-red-500 border-2")
+          "w-full md:w-3/4 p-1 mt-2 rounded-xl text-slate-200 bg-slate-900 border-2 " +
+          (!subject.trim() ? "border-red-500" : "border-slate-600")
         }
       />
       <textarea
@@ -29,8 +29,8 @@ export default function Contact(props) {
         rows="5"
         placeholder={data[`${lang}`].contact_page.message}
         className={
-          "w-full md:w-3/4 p-1 mt-2 rounded-xl text-slate-900 resize-vertical " +
-          (!message.trim() && "border-red-500 border-2")
+          "w-full md:w-3/4 p-1 mt-2 rounded-xl resize-vertical text-slate-200 bg-slate-900 border-2 " +
+          (!message.trim() ? "border-red-500" : "border-slate-600")
         }
       />
       <a

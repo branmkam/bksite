@@ -20,79 +20,99 @@ export default function Shows(props) {
         {data[`${lang}`].shows_page.upcoming_title}
       </h1>
       <div className="grid justify-between grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
-        {shows.map((s, i) => (
-          <div key={"show" + i} className="flex flex-row items-center justify-between p-2 rounded-lg bg-slate-900">
-            <span className="px-2 text-base md:text-lg">
-              {s.venue} <br />{" "}
-              <a
-                className="text-slate-200 hover:text-red-400"
-                rel="noreferrer"
-                target="_blank"
-                href={"https://google.com/maps/search/" + s.city}
-              >
-                {s.city}
-              </a>{" "}
-              <br />
-              {ParseISO(s.date).toLocaleDateString([lang, "en-US"], {
-                month: "short",
-                day: "2-digit",
-                year: "numeric"
-              })}{" "}
-              |{" "}
-              {ParseISO(s.date).toLocaleTimeString([lang, "en-US"], {
-                hour: "2-digit",
-                minute: "2-digit",
-              })}
-            </span>
-            <span className="px-2">
-              <a href={s.link} target="_blank" rel="noreferrer">
-                <FontAwesomeIcon
-                  icon={faTicket}
-                  className="hover:text-yellow-500 size-7"
-                />
-              </a>
-            </span>
-          </div>
-        ))}
+        {shows.length > 0 ? (
+          shows.map((s, i) => (
+            <div
+              key={"show" + i}
+              className="flex flex-row items-center justify-between p-2 rounded-lg bg-slate-900"
+            >
+              <span className="px-2 text-base md:text-lg">
+                <a
+                  className="text-slate-200 hover:text-red-400"
+                  rel="noreferrer"
+                  target="_blank"
+                  href={
+                    "https://google.com/maps/search/" + s.venue + " " + s.city
+                  }
+                >
+                  {s.venue}
+                  <br />
+                  {s.city}
+                </a>{" "}
+                <br />
+                {ParseISO(s.date).toLocaleDateString([lang, "en-US"], {
+                  month: "short",
+                  day: "2-digit",
+                  year: "numeric",
+                })}{" "}
+                |{" "}
+                {ParseISO(s.date).toLocaleTimeString([lang, "en-US"], {
+                  hour: "2-digit",
+                  minute: "2-digit",
+                })}
+              </span>
+              <span className="px-2">
+                <a href={s.link} target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon
+                    icon={faTicket}
+                    className="hover:text-yellow-500 size-7"
+                  />
+                </a>
+              </span>
+            </div>
+          ))
+        ) : (
+          <p className="w-full text-lg">{data[`${lang}`].utils.arent_any}</p>
+        )}
       </div>
       <h1 className="my-2 text-lg font-bold md:text-xl">
         {data[`${lang}`].shows_page.past_title}
       </h1>
       <div className="grid justify-between grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
-        {pastshows.map((s, i) => (
-          <div key={"show" + i} className="flex flex-row items-center justify-between p-2 rounded-lg bg-slate-900">
-            <span className="px-2 text-base md:text-lg">
-              {s.venue} <br />{" "}
-              <a
-                className="text-slate-200 hover:text-red-400"
-                rel="noreferrer"
-                target="_blank"
-                href={"https://google.com/maps/search/" + s.city}
-              >
-                {s.city}
-              </a>{" "}
-              <br />
-              {ParseISO(s.date).toLocaleDateString([lang, "en-US"], {
-                month: "short",
-                day: "2-digit",
-                year: "numeric"
-              })}{" "}
-              |{" "}
-              {ParseISO(s.date).toLocaleTimeString([lang, "en-US"], {
-                hour: "2-digit",
-                minute: "2-digit",
-              })}
-            </span>
-            <span className="px-2">
-              <a href={s.link} target="_blank" rel="noreferrer">
-                <FontAwesomeIcon
-                  icon={faEye}
-                  className="hover:text-yellow-500 size-7"
-                />
-              </a>
-            </span>
-          </div>
-        ))}
+        {pastshows.length > 0 ? (
+          pastshows.map((s, i) => (
+            <div
+              key={"show" + i}
+              className="flex flex-row items-center justify-between p-2 rounded-lg bg-slate-900"
+            >
+              <span className="px-2 text-base md:text-lg">
+                <a
+                  className="text-slate-200 hover:text-red-400"
+                  rel="noreferrer"
+                  target="_blank"
+                  href={
+                    "https://google.com/maps/search/" + s.venue + " " + s.city
+                  }
+                >
+                  {s.venue}
+                  <br />
+                  {s.city}
+                </a>{" "}
+                <br />
+                {ParseISO(s.date).toLocaleDateString([lang, "en-US"], {
+                  month: "short",
+                  day: "2-digit",
+                  year: "numeric",
+                })}{" "}
+                |{" "}
+                {ParseISO(s.date).toLocaleTimeString([lang, "en-US"], {
+                  hour: "2-digit",
+                  minute: "2-digit",
+                })}
+              </span>
+              <span className="px-2">
+                <a href={s.link} target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon
+                    icon={faEye}
+                    className="hover:text-yellow-500 size-7"
+                  />
+                </a>
+              </span>
+            </div>
+          ))
+        ) : (
+          <p className="w-full text-lg">{data[`${lang}`].utils.arent_any}</p>
+        )}
       </div>
     </div>
   );

@@ -20,6 +20,9 @@
       "bio_title": "Full Bio",
       "bio_text": "brankam is a multi-faceted artist that hopes to bridge his talents together into something that anyone can enjoy. A keyboardist, singer-songwriter, rapper, and producer all bundled into one, he began writing his own music at 11. Never fully settling on one genre, it’s been an arduous yet rewarding journey to mix his passions for groovy beats, witty wordplay, heartfelt lyrics, and jazz-driven chords into a uniquely concocted style years in the making.\nHe is trilingual with aspirations to be a hyperpolyglot, taking influence from all around the world through artists old and new (e.g. Frah Quintale, Davide Shorty, Daft Punk, Stromae, Fujii Kaze, Salvador Sobral, Tom Jobim, mor ve ötesi) - and currently has songs written in Spanish and Italian in addition to his native English. He only hopes to grow this catalog along with his language skills, and maybe one day he’ll be able to greet you in your mother tongue!\nEnglish-speaking artists including Lawrence, Chromeo, Kaytranada, Childish Gambino, Jacob Collier, A Tribe Called Quest, Tom Misch, Anderson .Paak, Franc Moody, and The Internet have also all had substantial influence on his music.\nAs someone who seeks to truly understand the people of this giant globe we call home,  brankam hopes to spread his one-of-a-kind approach to music to every corner of the world - that his music touches your soul in whatever language you speak or genre you enjoy."
     },
+    "music_page": {
+      "newest_title": "Newest Releases"
+    },
     "shows_page": {
       "upcoming_title": "Upcoming Shows",
       "past_title": "Past Shows"
@@ -30,6 +33,9 @@
       "message": "Write your message here...",
       "submit": "Submit",
       "link": "Or go to the |homepage| to see my socials!"
+    },
+    "utils": {
+      "arent_any": "There aren't any now, but check back soon!"
     }
   },
   "es": {
@@ -53,6 +59,9 @@
       "bio_title": "Resumen Completo",
       "bio_text": "Tradúzcalo aquí"
     },
+    "music_page": {
+      "newest_title": "Canciones Más Nuevas"
+    },
     "shows_page": {
       "upcoming_title": "Próximas Actuaciones",
       "past_title": "Actuaciones Previas"
@@ -63,6 +72,9 @@
       "message": "Escribe tu mensaje aquí...",
       "submit": "Envíalo",
       "link": "O vayas al |inicio| para ver mis redes sociales!"
+    },
+    "utils": {
+      "arent_any": "No hay nada al momento, ¡pero vuelva pronto y habrá algo!"
     }
   },
   "it": {
@@ -86,6 +98,9 @@
       "bio_title": "Riepilogo Completo",
       "bio_text": "Traducilo qui"
     },
+    "music_page": {
+      "newest_title": "Brani Più Nuovi"
+    },
     "shows_page": {
       "upcoming_title": "Prossimi Spettacoli",
       "past_title": "Spettacoli Già Passati"
@@ -96,6 +111,9 @@
       "message": "Scrivi il tuo messaggio qui...",
       "submit": "Invialo",
       "link": "O vadi |all'inizio| per vedere le mie reti sociali!"
+    },
+    "utils": {
+      "arent_any": "Non c'è niente adesso, ma ci sarà qualcosa presto!"
     }
   }
 }
