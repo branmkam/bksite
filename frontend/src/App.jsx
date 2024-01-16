@@ -58,12 +58,12 @@ function App() {
       </p>
 
       {/* side menu */}
-      <div className="fixed z-0 grid text-center justify-between grid-cols-2 h-16 gap-0 pl-16 gap-x-2 mx-2 md:my-2 min-[500px]:flex min-[500px]:mt-4 min-[500px]:gap-4 md:p-0 min-[500px]:flex-row md:flex md:flex-col md:justify-center md:h-full md:m-2 text-sm md:text-right md:text-lg md:right-2">
+      <div className="fixed z-0 grid text-center text-sm justify-between grid-cols-2 mt-1 pl-16 gap-x-2 gap-y-0.5 md:my-2 min-[500px]:flex min-[500px]:mt-4 min-[500px]:gap-4 md:p-0 min-[500px]:flex-row md:flex md:flex-col md:justify-center md:h-full md:m-2 md:text-right md:text-lg md:right-2">
         <p
           //flex flex-col justify-center h-full m-1 text-sm text-right tabs md:text-lg md:right-2
           //md:flex md:flex-col md:justify-center md:h-full md:m-2 text-sm md:text-right md:text-lg md:right-2
           className={
-            "z-[-1] text-white transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
+            "z-0 text-white transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
             (page == 1 && "text-red-500")
           }
           onClick={() => {
@@ -113,7 +113,7 @@ function App() {
       </div>
 
       {/* big div */}
-      <div className="container z-40 w-screen pl-4 pr-6 md:m-0 md:pl-24 md:pr-24">
+      <div className="container z-40 w-screen pl-4 pr-6 md:m-0 md:pl-28 md:pr-28">
         {/* <img src="globespin.gif" className="fixed z-0 brightness-50 h-1/2" /> */}
         {renderSwitch(page)}
       </div>

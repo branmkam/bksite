@@ -26,6 +26,7 @@
     },
     "contact_page": {
       "title": "Contact Me!",
+      "subject": "Subject",
       "message": "Write your message here...",
       "submit": "Submit",
       "link": "Or go to the |homepage| to see my socials!"
@@ -58,6 +59,7 @@
     },
     "contact_page": {
       "title": "Contáctame!",
+      "subject": "Sujeto",
       "message": "Escribe tu mensaje aquí...",
       "submit": "Envíalo",
       "link": "O vayas al |inicio| para ver mis redes sociales!"
@@ -90,6 +92,7 @@
     },
     "contact_page": {
       "title": "Contattimi!",
+      "subject": "Soggetto",
       "message": "Scrivi il tuo messaggio qui...",
       "submit": "Invialo",
       "link": "O vadi |all'inizio| per vedere le mie reti sociali!"

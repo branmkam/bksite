@@ -15,9 +15,9 @@ export default function Homepage(props) {
 
   return (
     <div
-      className={"h-screen w-[100%] flex flex-col text-center justify-center items-center"}
+      className={"h-[95vh] w-[100%] mt-2 flex flex-col text-center justify-center items-center"}
     >
-      <h1 className="text-2xl text-orange-400 font-sigmar">
+      <h1 className="text-lg text-orange-400 md:text-2xl font-sigmar">
         {data[`${lang}`].homepage.text.toLowerCase()}
       </h1>
       <img src="globespin.gif" className="z-0 mb-2 h-1/2" />

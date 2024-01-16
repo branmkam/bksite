@@ -15,7 +15,7 @@ export default function Shows(props) {
     .sort((a, b) => new Date(a.date) - new Date(b.date)); //most recent first
 
   return (
-    <div className="z-20 flex flex-col py-12 my-2 md:py-0">
+    <div className="z-20 flex flex-col pb-8 my-2 pt-14 md:py-0">
       <h1 className="my-2 text-lg font-bold md:text-xl">
         {data[`${lang}`].shows_page.upcoming_title}
       </h1>
