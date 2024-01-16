@@ -7,7 +7,7 @@ export default function Contact(props) {
   const link = data[`${lang}`].contact_page.link.split("|");
   
   return (
-    <div className="z-20 flex flex-col justify-center w-full h-full my-2">
+    <div className="z-20 flex flex-col justify-center w-full h-full py-12 my-2 md:py-0">
       <h1 className="text-lg font-bold md:text-xl">
         {data[`${lang}`].contact_page.title}
       </h1>

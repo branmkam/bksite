@@ -28,14 +28,14 @@ function App() {
   }
 
   return (
-    <div className="font-afacad text-slate-200">
+    <div className="w-full h-full font-afacad text-slate-200">
       {/* languages */}
-      <div className="fixed z-40 flex flex-row justify-start right-2">
+      <div className="fixed z-40 flex flex-row justify-start p-0 bg-black rounded-lg right-2">
         {langs.map((l) => (
           <span
             key={"lang-" + l}
             className={
-              "text-sm transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer m-1 " +
+              "z-0 text-sm transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer m-1 " +
               (lang == l && "text-red-400")
             }
             onClick={() => setLang(l)}
@@ -45,8 +45,13 @@ function App() {
         ))}
       </div>
 
+      {/* mobile pseudo top menu */}
+      <div className="fixed top-0 w-full h-16 bg-black md:bg-transparent">
+
+      </div>
+
       {/* side homepage */}
-      <p className="fixed z-30 flex flex-col justify-center h-full left-1">
+      <p className="fixed z-20 flex flex-col justify-start h-full mt-1 md:justify-center left-1">
         <img
           src="brankambubbleonlyvector.png"
           className="h-12 md:h-16 hover:brightness-125 hover:cursor-pointer"
@@ -55,10 +60,10 @@ function App() {
       </p>
 
       {/* side menu */}
-      <div className="fixed z-30 flex flex-col justify-center h-full m-1 text-sm text-right tabs md:text-lg right-2">
+      <div className="fixed z-0 grid text-center justify-between grid-cols-2 gap-x-2 m-2 text-sm min-[500px]:flex min-[500px]:mt-4 min-[500px]:gap-4 min-[500px]:flex-row md:gap-2 md:flex md:h-full md:flex-col left-16 md:justify-center md:text-right md:right-2 md:text-lg">
         <p
           className={
-            "text-white transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
+            "z-[-1] text-white transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
             (page == 1 && "text-red-500")
           }
           onClick={() => {
@@ -69,7 +74,7 @@ function App() {
         </p>
         <p
           className={
-            "text-white transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
+            "z-0 text-white transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
             (page == 2 && "text-red-500")
           }
           onClick={() => {
@@ -80,7 +85,7 @@ function App() {
         </p>
         <p
           className={
-            "text-white transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
+            "z-0 text-white transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
             (page == 3 && "text-red-500")
           }
           onClick={() => {
@@ -91,7 +96,7 @@ function App() {
         </p>
         <p
           className={
-            "text-white transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
+            "z-0 text-white transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
             (page == 4 && "text-red-500")
           }
           onClick={() => {
@@ -103,16 +108,15 @@ function App() {
       </div>
 
       {/* footer */}
-      <div className="fixed bottom-0 z-40 flex flex-col justify-end w-full h-8 p-2 text-sm text-right md:text-lg">
+      <div className="fixed bottom-0 z-40 flex flex-col justify-end w-full h-8 p-2 text-sm text-center bg-black md:bg-transparent md:text-right">
         <p>
           &copy; 2024
-          <br />
           brankam
         </p>
       </div>
 
       {/* big div */}
-      <div className="container w-screen pl-24 pr-24">
+      <div className="container z-40 w-screen pl-4 pr-6 md:m-0 md:pl-24 md:pr-24">
         {/* <img src="globespin.gif" className="fixed z-0 brightness-50 h-1/2" /> */}
         {renderSwitch(page)}
       </div>
