@@ -46,12 +46,10 @@ function App() {
       </div>
 
       {/* mobile pseudo top menu */}
-      <div className="fixed top-0 w-full h-16 bg-black md:bg-transparent">
-
-      </div>
+      <div className="fixed top-0 w-full h-16 bg-black md:bg-transparent"></div>
 
       {/* side homepage */}
-      <p className="fixed z-20 flex flex-col justify-start h-full mt-1 md:justify-center left-1">
+      <p className="fixed z-20 flex flex-col justify-start h-full mt-1 md:mt-0 md:justify-center left-1">
         <img
           src="brankambubbleonlyvector.png"
           className="h-12 md:h-16 hover:brightness-125 hover:cursor-pointer"
@@ -60,8 +58,10 @@ function App() {
       </p>
 
       {/* side menu */}
-      <div className="fixed z-0 grid text-center justify-between grid-cols-2 gap-x-2 m-2 text-sm min-[500px]:flex min-[500px]:mt-4 min-[500px]:gap-4 min-[500px]:flex-row md:gap-2 md:flex md:h-full md:flex-col left-16 md:justify-center md:text-right md:right-2 md:text-lg">
+      <div className="fixed z-0 grid text-center justify-between grid-cols-2 h-16 gap-0 pl-16 gap-x-2 mx-2 md:my-2 min-[500px]:flex min-[500px]:mt-4 min-[500px]:gap-4 md:p-0 min-[500px]:flex-row md:flex md:flex-col md:justify-center md:h-full md:m-2 text-sm md:text-right md:text-lg md:right-2">
         <p
+          //flex flex-col justify-center h-full m-1 text-sm text-right tabs md:text-lg md:right-2
+          //md:flex md:flex-col md:justify-center md:h-full md:m-2 text-sm md:text-right md:text-lg md:right-2
           className={
             "z-[-1] text-white transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
             (page == 1 && "text-red-500")
@@ -109,10 +109,7 @@ function App() {
 
       {/* footer */}
       <div className="fixed bottom-0 z-40 flex flex-col justify-end w-full h-8 p-2 text-sm text-center bg-black md:bg-transparent md:text-right">
-        <p>
-          &copy; 2024
-          brankam
-        </p>
+        <p>&copy; 2024 brankam</p>
       </div>
 
       {/* big div */}
