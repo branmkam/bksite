@@ -15,14 +15,14 @@ export default function Shows(props) {
     .sort((a, b) => new Date(a.date) - new Date(b.date)); //most recent first
 
   return (
-    <div className="z-20 my-2 flex-col flex">
-      <h1 className="text-lg md:text-xl font-bold my-2">
+    <div className="z-20 flex flex-col my-2">
+      <h1 className="my-2 text-lg font-bold md:text-xl">
         {data[`${lang}`].shows_page.upcoming_title}
       </h1>
-      <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 justify-between">
+      <div className="grid justify-between grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
         {shows.map((s, i) => (
-          <div key={"show" + i} className="flex flex-row items-center p-2 rounded-lg bg-slate-700">
-            <span className="text-base md:text-lg px-2">
+          <div key={"show" + i} className="flex flex-row items-center justify-between p-2 rounded-lg bg-slate-700">
+            <span className="px-2 text-base md:text-lg">
               {s.venue} <br />{" "}
               <a
                 className="text-slate-200 hover:text-red-400"
@@ -48,20 +48,20 @@ export default function Shows(props) {
               <a href={s.link} target="_blank" rel="noreferrer">
                 <FontAwesomeIcon
                   icon={faTicket}
-                  className="hover:text-yellow-500"
+                  className="hover:text-yellow-500 size-7"
                 />
               </a>
             </span>
           </div>
         ))}
       </div>
-      <h1 className="text-lg md:text-xl font-bold my-2">
+      <h1 className="my-2 text-lg font-bold md:text-xl">
         {data[`${lang}`].shows_page.past_title}
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 justify-between">
+      <div className="grid justify-between grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
         {pastshows.map((s, i) => (
-          <div key={"show" + i} className="flex flex-row items-center p-2 rounded-lg bg-slate-700">
-            <span className="text-base md:text-lg px-2">
+          <div key={"show" + i} className="flex flex-row items-center justify-between p-2 rounded-lg bg-slate-700">
+            <span className="px-2 text-base md:text-lg">
               {s.venue} <br />{" "}
               <a
                 className="text-slate-200 hover:text-red-400"
@@ -87,7 +87,7 @@ export default function Shows(props) {
               <a href={s.link} target="_blank" rel="noreferrer">
                 <FontAwesomeIcon
                   icon={faEye}
-                  className="hover:text-yellow-500"
+                  className="hover:text-yellow-500 size-7"
                 />
               </a>
             </span>

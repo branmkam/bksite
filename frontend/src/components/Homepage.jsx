@@ -8,12 +8,19 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-export default function Homepage() {
+import data from "../data/translate.json";
+
+export default function Homepage(props) {
+  const { lang } = props;
+
   return (
     <div
-      className={"h-screen w-screen flex flex-col justify-center items-center"}
+      className={"h-screen w-[100%] flex flex-col text-center justify-center items-center"}
     >
-      <img src="globespin.gif" className="z-0 h-1/2 mb-2" />
+      <h1 className="text-2xl text-orange-400 font-sigmar">
+        {data[`${lang}`].homepage.text.toLowerCase()}
+      </h1>
+      <img src="globespin.gif" className="z-0 mb-2 h-1/2" />
       <span>
         <a
           className="m-2 text-xl transition-colors duration-200 ease-in-out hover:text-yellow-500"

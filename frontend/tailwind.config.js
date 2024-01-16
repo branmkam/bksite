@@ -5,16 +5,17 @@ export default {
     extend: {
       fontFamily: {
         afacad: ["Afacad", "sans-serif"],
+        sigmar: ["Sigmar", "sans-serif"],
       },
       keyframes: {
         hoveryellow: {
-          '0%': { backgroundColor: 'white' },
-          '100%': { backgroundColor: '#FFD300'},
-        }
+          "0%": { backgroundColor: "white" },
+          "100%": { backgroundColor: "#FFD300" },
+        },
       },
       animation: {
-        hoveryellow: 'hoveryell 1s ease-in-out',
-      }  
+        hoveryellow: "hoveryell 1s ease-in-out",
+      },
     },
   },
   plugins: [],

@@ -1,5 +1,8 @@
 {
   "en": {
+    "homepage": {
+      "text": "new music out soon!"
+    },
     "sidebar": {
       "about": "About",
       "music": "Music",
@@ -24,10 +27,14 @@
     "contact_page": {
       "title": "Contact Me!",
       "message": "Write your message here...",
-      "submit": "Submit"
+      "submit": "Submit",
+      "link": "Or go to the |homepage| to see my socials!"
     }
   },
   "es": {
+    "homepage": {
+      "text": "nueva música disponible pronto!"
+    },
     "sidebar": {
       "about": "Sobre mi",
       "music": "Música",
@@ -52,10 +59,14 @@
     "contact_page": {
       "title": "Contáctame!",
       "message": "Escribe tu mensaje aquí...",
-      "submit": "Envíalo"
+      "submit": "Envíalo",
+      "link": "O vayas al |inicio| para ver mis redes sociales!"
     }
   },
   "it": {
+    "homepage": {
+      "text": "nuova musica sarà rilasciata presto!"
+    },
     "sidebar": {
       "about": "Sull'artista",
       "music": "Musica",
@@ -80,7 +91,8 @@
     "contact_page": {
       "title": "Contattimi!",
       "message": "Scrivi il tuo messaggio qui...",
-      "submit": "Invialo"
+      "submit": "Invialo",
+      "link": "O vadi |all'inizio| per vedere le mie reti sociali!"
     }
   }
 }

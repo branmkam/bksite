@@ -21,25 +21,22 @@ function App() {
       case 3:
         return <Shows lang={lang} />;
       case 4:
-        return <Contact lang={lang} />;
+        return <Contact lang={lang} setPage={setPage} />;
       default:
-        return <Homepage />;
+        return <Homepage lang={lang} />;
     }
   }
-
-  useEffect(() => {
-    console.log(page);
-  }, [page])
 
   return (
     <div className="font-afacad text-slate-200">
       {/* languages */}
-      <div className="flex flex-row fixed right-2 z-40 justify-start">
+      <div className="fixed z-40 flex flex-row justify-start right-2">
         {langs.map((l) => (
           <span
+            key={"lang-" + l}
             className={
               "text-sm transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer m-1 " +
-              (lang == l && "text-red-500")
+              (lang == l && "text-red-400")
             }
             onClick={() => setLang(l)}
           >
@@ -49,7 +46,7 @@ function App() {
       </div>
 
       {/* side homepage */}
-      <p className="z-30 fixed left-1 justify-center flex flex-col h-full">
+      <p className="fixed z-30 flex flex-col justify-center h-full left-1">
         <img
           src="brankambubbleonlyvector.png"
           className="h-12 md:h-16 hover:brightness-125 hover:cursor-pointer"
@@ -58,7 +55,7 @@ function App() {
       </p>
 
       {/* side menu */}
-      <div className="z-30 tabs text-sm md:text-lg flex flex-col h-full justify-center right-2 text-right fixed m-1">
+      <div className="fixed z-30 flex flex-col justify-center h-full m-1 text-sm text-right tabs md:text-lg right-2">
         <p
           className={
             "text-white transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
@@ -106,13 +103,17 @@ function App() {
       </div>
 
       {/* footer */}
-      <div className="z-40 text-sm md:text-lg w-full flex flex-col fixed justify-end bottom-0 h-8 p-2 text-right">
-        <p>&copy; 2024 brankam</p>
+      <div className="fixed bottom-0 z-40 flex flex-col justify-end w-full h-8 p-2 text-sm text-right md:text-lg">
+        <p>
+          &copy; 2024
+          <br />
+          brankam
+        </p>
       </div>
 
       {/* big div */}
-      <div className="container flex flex-col justify-center items-center pr-24 pl-24">
-        {/* <img src="globespin.gif" className="fixed brightness-50 z-0 h-1/2" /> */}
+      <div className="container w-screen pl-24 pr-24">
+        {/* <img src="globespin.gif" className="fixed z-0 brightness-50 h-1/2" /> */}
         {renderSwitch(page)}
       </div>
     </div>
