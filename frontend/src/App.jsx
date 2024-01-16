@@ -27,6 +27,10 @@ function App() {
     }
   }
 
+  useEffect(() => {
+    console.log(page);
+  }, [page])
+
   return (
     <div className="font-afacad text-slate-200">
       {/* languages */}
@@ -35,7 +39,7 @@ function App() {
           <span
             className={
               "text-sm transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer m-1 " +
-              (lang == l && "text-red-400")
+              (lang == l && "text-red-500")
             }
             onClick={() => setLang(l)}
           >
@@ -58,7 +62,7 @@ function App() {
         <p
           className={
             "text-white transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
-            (page == 1 && "text-red-400")
+            (page == 1 && "text-red-500")
           }
           onClick={() => {
             setPage(1);
@@ -69,7 +73,7 @@ function App() {
         <p
           className={
             "text-white transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
-            (page == 2 && "text-red-400")
+            (page == 2 && "text-red-500")
           }
           onClick={() => {
             setPage(2);
@@ -80,7 +84,7 @@ function App() {
         <p
           className={
             "text-white transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
-            (page == 3 && "text-red-400")
+            (page == 3 && "text-red-500")
           }
           onClick={() => {
             setPage(3);
@@ -91,7 +95,7 @@ function App() {
         <p
           className={
             "text-white transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
-            (page == 4 && "text-red-400")
+            (page == 4 && "text-red-500")
           }
           onClick={() => {
             setPage(4);

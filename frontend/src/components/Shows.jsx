@@ -15,13 +15,13 @@ export default function Shows(props) {
     .sort((a, b) => new Date(a.date) - new Date(b.date)); //most recent first
 
   return (
-    <div className="z-20 flex-col flex">
-      <h1 class="text-lg md:text-xl font-bold my-2">
+    <div className="z-20 my-2 flex-col flex">
+      <h1 className="text-lg md:text-xl font-bold my-2">
         {data[`${lang}`].shows_page.upcoming_title}
       </h1>
       <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 justify-between">
-        {shows.map((s) => (
-          <div className="flex flex-row items-center p-2 rounded-lg bg-slate-700">
+        {shows.map((s, i) => (
+          <div key={"show" + i} className="flex flex-row items-center p-2 rounded-lg bg-slate-700">
             <span className="text-base md:text-lg px-2">
               {s.venue} <br />{" "}
               <a
@@ -55,12 +55,12 @@ export default function Shows(props) {
           </div>
         ))}
       </div>
-      <h1 class="text-lg md:text-xl font-bold my-2">
+      <h1 className="text-lg md:text-xl font-bold my-2">
         {data[`${lang}`].shows_page.past_title}
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 justify-between">
-        {pastshows.map((s) => (
-          <div className="flex flex-row items-center p-2 rounded-lg bg-slate-700">
+        {pastshows.map((s, i) => (
+          <div key={"show" + i} className="flex flex-row items-center p-2 rounded-lg bg-slate-700">
             <span className="text-base md:text-lg px-2">
               {s.venue} <br />{" "}
               <a

@@ -14,12 +14,17 @@
         "Hobbies:make music, hang out with friends, watch TV, study foreign languages, build software applications",
         "Languages Spoken: English (native), Spanish (fluent), Italian (fluent), Portuguese (conversational), French (conversational), Turkish (conversational)"
       ],
-      "bio_title": "Full bio",
+      "bio_title": "Full Bio",
       "bio_text": "brankam is a multi-faceted artist that hopes to bridge his talents together into something that anyone can enjoy. A keyboardist, singer-songwriter, rapper, and producer all bundled into one, he began writing his own music at 11. Never fully settling on one genre, it’s been an arduous yet rewarding journey to mix his passions for groovy beats, witty wordplay, heartfelt lyrics, and jazz-driven chords into a uniquely concocted style years in the making.\nHe is trilingual with aspirations to be a hyperpolyglot, taking influence from all around the world through artists old and new (e.g. Frah Quintale, Davide Shorty, Daft Punk, Stromae, Fujii Kaze, Salvador Sobral, Tom Jobim, mor ve ötesi) - and currently has songs written in Spanish and Italian in addition to his native English. He only hopes to grow this catalog along with his language skills, and maybe one day he’ll be able to greet you in your mother tongue!\nEnglish-speaking artists including Lawrence, Chromeo, Kaytranada, Childish Gambino, Jacob Collier, A Tribe Called Quest, Tom Misch, Anderson .Paak, Franc Moody, and The Internet have also all had substantial influence on his music.\nAs someone who seeks to truly understand the people of this giant globe we call home,  brankam hopes to spread his one-of-a-kind approach to music to every corner of the world - that his music touches your soul in whatever language you speak or genre you enjoy."
     },
     "shows_page": {
       "upcoming_title": "Upcoming Shows",
       "past_title": "Past Shows"
+    },
+    "contact_page": {
+      "title": "Contact Me!",
+      "message": "Write your message here...",
+      "submit": "Submit"
     }
   },
   "es": {
@@ -43,6 +48,11 @@
     "shows_page": {
       "upcoming_title": "Próximas Actuaciones",
       "past_title": "Actuaciones Previas"
+    },
+    "contact_page": {
+      "title": "Contáctame!",
+      "message": "Escribe tu mensaje aquí...",
+      "submit": "Envíalo"
     }
   },
   "it": {
@@ -50,7 +60,7 @@
       "about": "Sull'artista",
       "music": "Musica",
       "shows": "Spettacoli",
-      "contact": "Contattami"
+      "contact": "Contattimi"
     },
     "about_page": {
       "fast_facts_title": "Fatti Basici",
@@ -66,6 +76,11 @@
     "shows_page": {
       "upcoming_title": "Prossimi Spettacoli",
       "past_title": "Spettacoli Già Passati"
+    },
+    "contact_page": {
+      "title": "Contattimi!",
+      "message": "Scrivi il tuo messaggio qui...",
+      "submit": "Invialo"
     }
   }
 }

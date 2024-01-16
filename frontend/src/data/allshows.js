@@ -29,6 +29,12 @@ const allshows = [
       link: "https://www.sofarsounds.com/events/52360",
       date: "2023-12-19T21:20:00",
     },
+    {
+      venue: "Fortnite Festival",
+      city: "Charlotte, NC, USA",
+      link: "https://www.sofarsounds.com/events/52360",
+      date: "2025-06-07T21:20:00",
+    },
   ];
 
   export default allshows;

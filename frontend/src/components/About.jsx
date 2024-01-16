@@ -6,14 +6,13 @@ export default function About(props) {
   let texts = text.split("\n");
 
   let facts = data[`${lang}`].about_page.fast_facts;
-  console.log(facts);
-
+  
   return (
     <div className="my-2 z-20">
       <h1 className="md:text-lg text-xl font-bold my-2">
         {data[`${lang}`].about_page.fast_facts_title}
       </h1>
-      <div className="grid text-sm grid-cols-1 md:grid-cols-2 gap-2 justify-between">
+      <div className="bg-yellow-600 rounded-xl p-2 text-black grid text-sm grid-cols-1 md:grid-cols-2 gap-2 justify-between">
         {facts.map((f) => {
           let fs = f.split(":");
           return (
