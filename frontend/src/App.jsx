@@ -58,7 +58,7 @@ function App() {
       </p>
 
       {/* side menu */}
-      <div className="fixed z-0 grid text-center text-sm justify-between grid-cols-2 mt-1 pl-16 gap-x-2 gap-y-0.5 md:my-2 min-[500px]:flex min-[500px]:mt-4 min-[500px]:gap-4 md:p-0 min-[500px]:flex-row md:flex md:flex-col md:justify-center md:h-full md:m-2 md:text-right md:text-lg md:right-2">
+      <div className="fixed z-0 grid text-center text-sm justify-between grid-cols-2 mt-1 pl-16 gap-x-2 gap-y-0.5 md:my-2 min-[500px]:flex min-[500px]:mt-4 min-[500px]:gap-4 md:p-0 min-[500px]:flex-row md:flex md:flex-col md:gap-0 md:justify-center md:h-full md:m-2 md:text-right md:text-lg md:right-2">
         <p
           //flex flex-col justify-center h-full m-1 text-sm text-right tabs md:text-lg md:right-2
           //md:flex md:flex-col md:justify-center md:h-full md:m-2 text-sm md:text-right md:text-lg md:right-2
