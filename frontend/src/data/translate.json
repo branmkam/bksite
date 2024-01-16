@@ -1,36 +1,71 @@
 {
-    "en": {
-        "sidebar": {
-            "about": "About",
-            "music": "Music",
-            "shows": "Shows",
-            "contact": "Contact"
-        }, 
-        "about_page": {
-            "title": "About brankam",
-            "text" : "brankam is a multi-faceted artist that hopes to bridge his talents together into something that anyone can enjoy. A keyboardist, singer-songwriter, rapper, and producer all bundled into one, he began writing his own music at 11. Never fully settling on one genre, it’s been an arduous yet rewarding journey to mix his passions for groovy beats, witty wordplay, heartfelt lyrics, and jazz-driven chords into a uniquely concocted style years in the making.\nHe is trilingual with aspirations to be a hyperpolyglot, taking influence from all around the world through artists old and new (e.g. Frah Quintale, Davide Shorty, Daft Punk, Stromae, Fujii Kaze, Salvador Sobral, Tom Jobim, mor ve ötesi) - and currently has songs written in Spanish and Italian in addition to his native English. He only hopes to grow this catalog along with his language skills, and maybe one day he’ll be able to greet you in your mother tongue!\nEnglish-speaking artists including Lawrence, Chromeo, Kaytranada, Childish Gambino, Jacob Collier, A Tribe Called Quest, Tom Misch, Anderson .Paak, Franc Moody, and The Internet have also all had substantial influence on his music.\nAs someone who seeks to truly understand the people of this giant globe we call home,  brankam hopes to spread his one-of-a-kind approach to music to every corner of the world - that his music touches your soul in whatever language you speak or genre you enjoy."
-        }
+  "en": {
+    "sidebar": {
+      "about": "About",
+      "music": "Music",
+      "shows": "Shows",
+      "contact": "Contact"
     },
-    "es": {
-        "sidebar": {
-            "about": "Sobre mi",
-            "music": "Música",
-            "shows": "Actuaciones",
-            "contact": "Contáctame"
-        }, 
-        "about_page": {
-            "text" : "Brankam es un"
-        }
+    "about_page": {
+      "fast_facts_title": "Fast Facts",
+      "fast_facts": [
+        "Name:brankam",
+        "Current Residence:Charlotte, North Carolina, USA",
+        "Hobbies:make music, hang out with friends, watch TV, study foreign languages, build software applications",
+        "Languages Spoken: English (native), Spanish (fluent), Italian (fluent), Portuguese (conversational), French (conversational), Turkish (conversational)"
+      ],
+      "bio_title": "Full bio",
+      "bio_text": "brankam is a multi-faceted artist that hopes to bridge his talents together into something that anyone can enjoy. A keyboardist, singer-songwriter, rapper, and producer all bundled into one, he began writing his own music at 11. Never fully settling on one genre, it’s been an arduous yet rewarding journey to mix his passions for groovy beats, witty wordplay, heartfelt lyrics, and jazz-driven chords into a uniquely concocted style years in the making.\nHe is trilingual with aspirations to be a hyperpolyglot, taking influence from all around the world through artists old and new (e.g. Frah Quintale, Davide Shorty, Daft Punk, Stromae, Fujii Kaze, Salvador Sobral, Tom Jobim, mor ve ötesi) - and currently has songs written in Spanish and Italian in addition to his native English. He only hopes to grow this catalog along with his language skills, and maybe one day he’ll be able to greet you in your mother tongue!\nEnglish-speaking artists including Lawrence, Chromeo, Kaytranada, Childish Gambino, Jacob Collier, A Tribe Called Quest, Tom Misch, Anderson .Paak, Franc Moody, and The Internet have also all had substantial influence on his music.\nAs someone who seeks to truly understand the people of this giant globe we call home,  brankam hopes to spread his one-of-a-kind approach to music to every corner of the world - that his music touches your soul in whatever language you speak or genre you enjoy."
     },
-    "it": {
-        "sidebar": {
-            "about": "Sull'artista",
-            "music": "Musica",
-            "shows": "Spettacoli",
-            "contact": "Contattami"
-        }, 
-        "about_page": {
-            "text" : "Brankam,, un artista americano..."
-        }
+    "shows_page": {
+      "upcoming_title": "Upcoming Shows",
+      "past_title": "Past Shows"
     }
+  },
+  "es": {
+    "sidebar": {
+      "about": "Sobre mi",
+      "music": "Música",
+      "shows": "Actuaciones",
+      "contact": "Contáctame"
+    },
+    "about_page": {
+      "fast_facts_title": "Hechos Básicos",
+      "fast_facts": [
+        "Nombre:brankam",
+        "Residencia Actual:Charlotte, Carolina del Norte, EEUU",
+        "Pasatiempos:hacer música, pasar tiempo con mis amigos, mirar la tele, estudiar idiomas extranjeros, construir aplicaciones de software",
+        "Idiomas Conocidos: Inglés (nativo), Español (fluido), Italiano (fluido), Portugués (conversacional), Francés (conversacional), Turco (conversacional)"
+      ],
+      "bio_title": "Resumen Completo",
+      "bio_text": "Tradúzcalo aquí"
+    },
+    "shows_page": {
+      "upcoming_title": "Próximas Actuaciones",
+      "past_title": "Actuaciones Previas"
+    }
+  },
+  "it": {
+    "sidebar": {
+      "about": "Sull'artista",
+      "music": "Musica",
+      "shows": "Spettacoli",
+      "contact": "Contattami"
+    },
+    "about_page": {
+      "fast_facts_title": "Fatti Basici",
+      "fast_facts": [
+        "Nome:brankam",
+        "Residenza Attuale:Charlotte, Carolina del Nord, Stati Uniti",
+        "Passatempi:fare la musica, passare tempo coi miei amici, mirare la televisione, studiare lingue straniere, costruire applicazioni di software",
+        "Lingue Conosciute: Inglese (nativo), Spagnolo (fluente), Italiano (fluente), Portoghese (conversazionale), Francese (conversazionale), Turco (conversazionale)"
+      ],
+      "bio_title": "Riepilogo Completo",
+      "bio_text": "Traducilo qui"
+    },
+    "shows_page": {
+      "upcoming_title": "Prossimi Spettacoli",
+      "past_title": "Spettacoli Già Passati"
+    }
+  }
 }

@@ -4,7 +4,7 @@ export default function Music(props) {
   const { lang } = props;
   return (
     <div>
-      <p>{data[`${lang}`].about_page.text}</p>
+      <p>TBA</p>
     </div>
   );
 }
