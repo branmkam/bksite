@@ -63,7 +63,7 @@ function App() {
           //flex flex-col justify-center h-full m-1 text-sm text-right tabs md:text-lg md:right-2
           //md:flex md:flex-col md:justify-center md:h-full md:m-2 text-sm md:text-right md:text-lg md:right-2
           className={
-            "z-0 text-white transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
+            "z-0 transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
             (page == 1 && "text-red-500")
           }
           onClick={() => {
@@ -74,7 +74,7 @@ function App() {
         </p>
         <p
           className={
-            "z-0 text-white transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
+            "z-0 transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
             (page == 2 && "text-red-500")
           }
           onClick={() => {
@@ -85,7 +85,7 @@ function App() {
         </p>
         <p
           className={
-            "z-0 text-white transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
+            "z-0 transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
             (page == 3 && "text-red-500")
           }
           onClick={() => {
@@ -96,7 +96,7 @@ function App() {
         </p>
         <p
           className={
-            "z-0 text-white transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
+            "z-0 transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
             (page == 4 && "text-red-500")
           }
           onClick={() => {

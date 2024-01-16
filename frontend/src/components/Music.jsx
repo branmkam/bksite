@@ -50,14 +50,13 @@ export default function Music(props) {
               {Object.keys(c.platforms).map((p) => (
                 <a
                   key={c.name + "platform" + p}
-                  className="m-2 text-xl transition-colors duration-200 ease-in-out hover:text-yellow-500"
+                  className="m-2 text-xl transition-colors duration-200 ease-in-out md:text-3xl hover:text-yellow-500"
                   href={c.platforms[p]}
                   target="_blank"
                   rel="noreferrer"
                 >
                   <FontAwesomeIcon
                     icon={symbols[p]}
-                    className="contact__social"
                   />
                 </a>
               ))}
