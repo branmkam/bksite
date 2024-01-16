@@ -1,4 +1,5 @@
 import {
+  faApple,
   faBandcamp,
   faInstagram,
   faSoundcloud,
@@ -6,7 +7,6 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 import data from "../data/translate.json";
 
@@ -15,19 +15,15 @@ export default function Homepage(props) {
 
   return (
     <div
-      className={"h-[95vh] w-[100%] mt-2 flex flex-col text-center justify-center items-center"}
+      className={
+        "h-[95vh] w-[100%] mt-2 flex flex-col text-center justify-center items-center"
+      }
     >
       <h1 className="text-lg text-orange-400 md:text-2xl font-sigmar">
         {data[`${lang}`].homepage.text.toLowerCase()}
       </h1>
       <img src="globespin.gif" className="z-0 mb-2 h-1/2" />
       <span>
-        <a
-          className="m-2 text-xl transition-colors duration-200 ease-in-out hover:text-yellow-500"
-          href="mailto:linguafrancamusic1@gmail.com"
-        >
-          <FontAwesomeIcon icon={faEnvelope} className="contact__social" />
-        </a>
         <a
           className="m-2 text-xl transition-colors duration-200 ease-in-out hover:text-yellow-500"
           href="https://www.instagram.com/linguafrancamusic"
@@ -59,6 +55,14 @@ export default function Homepage(props) {
           rel="noreferrer"
         >
           <FontAwesomeIcon icon={faSoundcloud} className="contact__social" />
+        </a>
+        <a
+          className="m-2 text-xl transition-colors duration-200 ease-in-out hover:text-yellow-500"
+          href="https://music.apple.com/us/artist/linguafranca/1581609961"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon icon={faApple} className="contact__social" />
         </a>
         <a
           className="m-2 text-xl transition-colors duration-200 ease-in-out hover:text-yellow-500"

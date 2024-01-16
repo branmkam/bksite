@@ -21,7 +21,7 @@ export default function Shows(props) {
       </h1>
       <div className="grid justify-between grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
         {shows.map((s, i) => (
-          <div key={"show" + i} className="flex flex-row items-center justify-between p-2 rounded-lg bg-slate-700">
+          <div key={"show" + i} className="flex flex-row items-center justify-between p-2 rounded-lg bg-slate-900">
             <span className="px-2 text-base md:text-lg">
               {s.venue} <br />{" "}
               <a
@@ -60,7 +60,7 @@ export default function Shows(props) {
       </h1>
       <div className="grid justify-between grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
         {pastshows.map((s, i) => (
-          <div key={"show" + i} className="flex flex-row items-center justify-between p-2 rounded-lg bg-slate-700">
+          <div key={"show" + i} className="flex flex-row items-center justify-between p-2 rounded-lg bg-slate-900">
             <span className="px-2 text-base md:text-lg">
               {s.venue} <br />{" "}
               <a
