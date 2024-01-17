@@ -6,7 +6,7 @@ const catalog = [
     image:
       "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/97/11/2d/97112d87-0955-f189-98db-161cabcf2cdc/artwork.jpg/316x316bb.webp",
     collab_artists: [
-      { name: "Yak Mishra", link: "https://www.youtube.com/c/Yaktube" },
+      { name: "Yak Mishra", link: "https://www.youtube.com/c/Yaktube"}
     ],
     platforms: {
       spotify:

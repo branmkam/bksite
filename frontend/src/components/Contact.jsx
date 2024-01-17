@@ -39,7 +39,7 @@ export default function Contact(props) {
             ? `mailto:linguafrancamusic1@gmail.com?subject=${subject}&body=${message}`
             : "#"
         }
-        className="w-full md:w-3/4 px-2 my-2 text-center transition-colors duration-200 ease-in-out bg-yellow-500 rounded-lg hover:cursor-pointer text-slate-900 hover:text-yellow-500 hover:bg-slate-800"
+        className="w-full px-2 my-2 text-center transition-colors duration-200 ease-in-out bg-yellow-500 rounded-lg md:w-3/4 hover:cursor-pointer text-slate-900 hover:text-yellow-500 hover:bg-slate-800"
       >
         {data[`${lang}`].contact_page.submit}
       </a>

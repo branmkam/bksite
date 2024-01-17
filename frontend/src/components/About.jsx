@@ -16,8 +16,8 @@ export default function About(props) {
         {facts.map((f) => {
           let fs = f.split(":");
           return (
-            <div>
-              <span class="font-bold">{fs[0]}</span><br/>
+            <div key={fs[0]}>
+              <span className="font-bold">{fs[0]}</span><br/>
               <span>{fs[1]}</span>
             </div>
           );
