@@ -20,7 +20,7 @@ const catalog = [
   {
     name: "Expectations",
     type: "single",
-    release_date: "2023-08-10T00:00:00",
+    release_date: "2023-02-10T00:00:00",
     image:
       "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/c5/27/70/c5277000-6511-0adb-73dd-cd5f7434cbac/artwork.jpg/316x316bb.webp",
     collab_artists: [],

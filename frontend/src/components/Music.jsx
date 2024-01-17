@@ -36,7 +36,7 @@ export default function Music(props) {
                 {c.type}
               </p>
               <span className="text-sm">
-                ft.{" "}
+                {c.collab_artists.length > 0 && "ft. "}
                 {c.collab_artists.length > 0 ? (
                   c.collab_artists.map((a, i) => (
                     <span key={c.name + "artist" + a.name}>
@@ -52,7 +52,7 @@ export default function Music(props) {
                     </span>
                   ))
                 ) : (
-                  <p className="text-sm">Solo release</p>
+                  <span className="text-sm">Solo release</span>
                 )}
               </span>
               <span className="">
