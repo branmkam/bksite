@@ -4,10 +4,25 @@
 
 @layer base {
   html {
-      @apply bg-black;
+    @apply bg-black;
   }
 }
 
 body {
   margin: 0;
+  background-image: './public/bgimage.jpeg';
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*hold animations*/
+p.menuitem, .transition, .transition-colors, .musicitem, .animitem, .aboutitem {
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
 }
