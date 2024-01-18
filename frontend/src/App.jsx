@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="w-full h-full font-afacad text-slate-200">
       {/* languages */}
-      <div className="fixed z-40 flex flex-row justify-start p-0 bg-black rounded-lg right-2">
+      <div className="fixed z-40 flex flex-row justify-start p-0 bg-black rounded-lg right-2 animate-[comefromright_1s_ease-in-out_0s]">
         {langs.map((l) => (
           <span
             key={"lang-" + l}
@@ -46,10 +46,10 @@ function App() {
       </div>
 
       {/* mobile pseudo top menu */}
-      <div className="fixed top-0 w-full h-16 bg-black md:hidden"></div>
+      <div className="fixed top-0 w-full h-16 bg-black md:hidden animate-[comefromleft_1s_ease-in-out_0s]"></div>
 
       {/* side homepage */}
-      <p className="fixed z-20 flex flex-col justify-start h-full mt-1 md:mt-0 md:justify-center left-1">
+      <p className="fixed z-20 flex flex-col justify-start h-full mt-1 md:mt-0 md:justify-center left-1 animate-[comefromleft_1s_ease-in-out_0s]">
         <img
           src="brankambubbleonlyvector.png"
           className="w-14 md:w-28 hover:brightness-125 hover:cursor-pointer"
@@ -63,7 +63,7 @@ function App() {
           //flex flex-col justify-center h-full m-1 text-sm text-right tabs md:text-lg md:right-2
           //md:flex md:flex-col md:justify-center md:h-full md:m-2 text-sm md:text-right md:text-lg md:right-2
           className={
-            "z-0 transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
+            "z-0 md:animate-[comefromright_1s_ease-in-out_1.2s] transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
             (page == 1 && "text-red-500")
           }
           onClick={() => {
@@ -74,7 +74,7 @@ function App() {
         </p>
         <p
           className={
-            "z-0 transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
+            "z-0  md:animate-[comefromright_1s_ease-in-out_1.7s] transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
             (page == 2 && "text-red-500")
           }
           onClick={() => {
@@ -85,7 +85,7 @@ function App() {
         </p>
         <p
           className={
-            "z-0 transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
+            "z-0 md:animate-[comefromright_1s_ease-in-out_2.2s] transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
             (page == 3 && "text-red-500")
           }
           onClick={() => {
@@ -96,7 +96,7 @@ function App() {
         </p>
         <p
           className={
-            "z-0 transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
+            "z-0 md:animate-[comefromright_1s_ease-in-out_2.7s] transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
             (page == 4 && "text-red-500")
           }
           onClick={() => {
@@ -108,7 +108,7 @@ function App() {
       </div>
 
       {/* footer */}
-      <div className="fixed bottom-0 z-40 flex flex-col justify-end w-full h-8 p-2 text-sm text-center bg-black md:text-right">
+      <div className="fixed bottom-0 z-40 flex flex-col justify-end w-full h-8 p-2 text-sm text-center bg-black md:text-right animate-[comefrombottom_1s_ease-in-out_0s] md:animate-[comefromright_1s_ease-in-out_0s]">
         <p>&copy; 2024 brankam</p>
       </div>
 

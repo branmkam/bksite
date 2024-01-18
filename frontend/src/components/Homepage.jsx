@@ -19,7 +19,7 @@ export default function Homepage(props) {
         "h-[95vh] w-[100%] mt-2 flex flex-col text-center justify-center items-center"
       }
     >
-      <h1 className="text-lg text-orange-400 md:text-2xl font-sigmar">
+      <h1 className="text-lg text-orange-400 transition md:text-2xl font-sigmar">
         {data[`${lang}`].homepage.text.toLowerCase()}
       </h1>
       <img src="globespin.gif" className="z-0 mb-2 h-1/2" />

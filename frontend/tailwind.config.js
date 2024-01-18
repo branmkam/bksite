@@ -9,12 +9,49 @@ export default {
       },
       keyframes: {
         hoveryellow: {
-          "0%": { backgroundColor: "white" },
-          "100%": { backgroundColor: "#FFD300" },
+          "0%": { color: "white" },
+          "100%": { color: "#FFD300", transform: "translateY(-5px)" },
+        },
+        fadein: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+        comefromright: {
+          "0%": {
+            transform: "translateX(100px)",
+          },
+          "90%": {
+            transform: "translateX(-8px)"
+          },
+          "100%": {
+            transform: "translateX(0px)"
+          }
+        },
+        comefromleft: {
+          "0%": {
+            transform: "translateX(-100px)",
+          },
+          "90%": {
+            transform: "translateX(8px)"
+          },
+          "100%": {
+            transform: "translateX(0px)"
+          }
+        },
+        comefrombottom: {
+          "0%": {
+            transform: "translateY(100px)",
+          },
+          "90%": {
+            transform: "translateY(-8px)"
+          },
+          "100%": {
+            transform: "translateY(0px)"
+          }
         },
       },
       animation: {
-        hoveryellow: "hoveryell 1s ease-in-out",
+        hoveryellow: "hoveryellow 0.7s ease-in-out",
       },
     },
   },
