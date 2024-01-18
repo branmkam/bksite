@@ -42,9 +42,6 @@ export default {
           "0%": {
             transform: "translateY(100px)",
           },
-          "90%": {
-            transform: "translateY(-8px)"
-          },
           "100%": {
             transform: "translateY(0px)"
           }

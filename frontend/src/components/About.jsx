@@ -8,7 +8,7 @@ export default function About(props) {
   let facts = data[`${lang}`].about_page.fast_facts;
   
   return (
-    <div className="z-20 pb-8 mt-2 pt-14 md:py-0">
+    <div className="z-20 pb-8 mt-2 pt-14 md:pt-0">
       <h1 className="my-2 text-xl font-bold md:text-lg">
         {data[`${lang}`].about_page.fast_facts_title}
       </h1>
@@ -30,7 +30,7 @@ export default function About(props) {
       </h1>
 
       {texts.map((t) => (
-        <p className="my-2">{t}</p>
+        <p key={t} className="my-2">{t}</p>
       ))}
     </div>
   );

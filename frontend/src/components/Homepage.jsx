@@ -16,7 +16,7 @@ export default function Homepage(props) {
   return (
     <div
       className={
-        "h-[95vh] w-[100%] mt-2 flex flex-col text-center justify-center items-center"
+        "h-[95vh] w-[100%] mt-2 flex flex-col text-center justify-center items-center animate-[fadein_1s_ease-in-out]"
       }
     >
       <h1 className="text-lg text-orange-400 transition md:text-2xl font-sigmar">

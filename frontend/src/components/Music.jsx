@@ -19,10 +19,10 @@ export default function Music(props) {
       </p>
       <div className="grid grid-cols-1 gap-2 pb-8 md:grid-cols-2 lg:grid-cols-3">
         {timeCatalog.length > 0 ? (
-          timeCatalog.map((c) => (
+          timeCatalog.map((c, i) => (
             <div
               key={"div" + c.name}
-              className={`min-w-[250px] h-[350px] border-yellow-500 m-2 bg-slate-900 p-2 rounded-lg flex flex-col items-center justify-between text-center`}
+              className={`min-w-[250px] h-[350px] animate-[fadein_1s_ease-in-out_${parseInt(1 + i)/10}s] border-yellow-500 m-2 bg-slate-900 p-2 rounded-lg flex flex-col items-center justify-between text-center musicitem`}
             >
               <p className="font-semibold text-white md:text-lg">{c.name}</p>
               <img src={c.image} className="h-44" />

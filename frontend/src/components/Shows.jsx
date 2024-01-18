@@ -89,16 +89,18 @@ export default function Shows(props) {
                   {s.city}
                 </a>{" "}
                 <br />
-                {ParseISO(s.date).toLocaleDateString([lang, "en-US"], {
-                  month: "short",
-                  day: "2-digit",
-                  year: "numeric",
-                })}{" "}
-                |{" "}
-                {ParseISO(s.date).toLocaleTimeString([lang, "en-US"], {
-                  hour: "2-digit",
-                  minute: "2-digit",
-                })}
+                <span className="text-yellow-400">
+                  {ParseISO(s.date).toLocaleDateString([lang, "en-US"], {
+                    month: "short",
+                    day: "2-digit",
+                    year: "numeric",
+                  })}{" "}
+                  |{" "}
+                  {ParseISO(s.date).toLocaleTimeString([lang, "en-US"], {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                  })}
+                </span>
               </span>
               <span className="px-2">
                 <a href={s.link} target="_blank" rel="noreferrer">
