@@ -73,7 +73,7 @@ export default function Shows(props) {
           pastshows.map((s, i) => (
             <div
               key={"show" + i}
-              className={`flex flex-row items-center justify-between p-2 rounded-lg transition-colors duration-100 ease-in-out bg-slate-900 hover:bg-slate-800`}
+              className={`flex flex-row items-center justify-between p-2 rounded-lg transition-colors duration-100 ease-in-out bg-slate-900 bg-opacity-75 hover:bg-opacity-75 hover:bg-slate-800`}
               //${`bg-[url('${s.image}')]`}
             >
               <span className="px-2 text-base md:text-lg">

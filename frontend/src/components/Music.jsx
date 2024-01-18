@@ -24,7 +24,7 @@ export default function Music(props) {
               <div
                 key={"div-" + c.name}
                 className={
-                  `min-w-[250px] h-[350px] border-yellow-500 my-2 bg-slate-900 p-2 rounded-lg flex flex-col items-center justify-between text-center musicitem ${`animate-[fadein_1s_ease-in-out_${parseInt(1 + i)/10}s]`}`
+                  `min-w-[250px] h-[350px] border-yellow-500 my-2 bg-slate-900 bg-opacity-75 p-2 rounded-lg flex flex-col items-center justify-between text-center musicitem ${`animate-[fadein_1s_ease-in-out_${parseInt(1 + i)/10}s]`}`
                 }
               >
                 <p className="font-semibold text-white md:text-lg">{c.name}</p>

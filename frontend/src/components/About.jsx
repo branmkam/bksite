@@ -12,7 +12,7 @@ export default function About(props) {
       <h1 className="aboutitem my-2 text-xl font-bold md:mt-4 animate-[fadein_1s_ease-in-out_0s]">
         {data[`${lang}`].about_page.fast_facts_title}
       </h1>
-      <div className="aboutitem grid justify-between grid-cols-1 gap-2 p-2 text-sm text-black bg-yellow-600 rounded-xl md:grid-cols-2  animate-[fadein_1s_ease-in-out_0.1s]">
+      <div className="aboutitem grid justify-between grid-cols-1 gap-2 p-2 text-sm text-black bg-yellow-600 bg-opacity-95 rounded-xl md:grid-cols-2  animate-[fadein_1s_ease-in-out_0.1s]">
         {facts.map((f) => {
           let fs = f.split(":");
           return (
