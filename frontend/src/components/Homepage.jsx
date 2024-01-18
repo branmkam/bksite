@@ -25,7 +25,7 @@ export default function Homepage(props) {
       <img src="globespin-transparent.gif" className="z-0 mb-2 h-1/2" />
       <span className="text-2xl md:text-4xl">
         <a
-          className="m-2 transition-colors duration-200 ease-in-out hover:text-yellow-500"
+          className="m-2 transition-colors duration-200 ease-in-out hover:text-yellow-500 hover"
           href="https://www.instagram.com/linguafrancamusic"
           target="_blank"
           rel="noreferrer"

@@ -46,9 +46,18 @@ export default {
             transform: "translateY(0px)"
           }
         },
+        bounceup: {
+          "0%": {
+            transform: "translateY(0rem)"
+          },
+          "100%": {
+            transform: "translateY(-0.2rem)"
+          }
+        }
       },
       animation: {
         hoveryellow: "hoveryellow 0.7s ease-in-out",
+        bounceup: "bounceup 0.4s ease"
       },
     },
   },
