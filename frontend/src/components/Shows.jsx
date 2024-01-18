@@ -15,7 +15,7 @@ export default function Shows(props) {
     .sort((a, b) => new Date(a.date) - new Date(b.date)); //most recent first
 
   return (
-    <div className="z-20 flex flex-col pb-8 my-2 pt-14 md:py-0">
+    <div className="z-20 flex flex-col pb-8 my-2 shows pt-14 md:py-0">
       <h1 className="my-2 text-lg font-bold md:text-xl">
         {data[`${lang}`].shows_page.upcoming_title}
       </h1>
@@ -24,7 +24,7 @@ export default function Shows(props) {
           shows.map((s, i) => (
             <div
               key={"show" + i}
-              className="flex flex-row items-center justify-between p-2 rounded-lg bg-slate-900"
+              className={`flex flex-row items-center justify-between p-2 rounded-lg transition-colors duration-100 ease-in-out bg-slate-900 hover:bg-slate-800`}
             >
               <span className="px-2 text-base md:text-lg">
                 <a
@@ -73,7 +73,8 @@ export default function Shows(props) {
           pastshows.map((s, i) => (
             <div
               key={"show" + i}
-              className="flex flex-row items-center justify-between p-2 rounded-lg bg-slate-900"
+              className={`flex flex-row items-center justify-between p-2 rounded-lg transition-colors duration-100 ease-in-out bg-slate-900 hover:bg-slate-800`}
+              //${`bg-[url('${s.image}')]`}
             >
               <span className="px-2 text-base md:text-lg">
                 <a

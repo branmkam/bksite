@@ -13,7 +13,7 @@ body {
 }
 
 /*hold animations*/
-p.menuitem, .transition, .transition-colors, .musicitem {
+p.menuitem, .transition, .transition-colors, .musicitem, .animitem {
   -moz-animation-fill-mode: both;
   -webkit-animation-fill-mode: both;
   -o-animation-fill-mode: both;

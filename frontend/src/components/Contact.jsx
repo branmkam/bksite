@@ -10,8 +10,8 @@ export default function Contact(props) {
   const link = data[`${lang}`].contact_page.link.split("|");
 
   return (
-    <div className="z-20 flex flex-col justify-center w-full h-full pb-8 my-2 pt-14 md:py-0">
-      <h1 className="mt-2 text-lg font-bold md:text-xl">
+    <div className="z-20 flex flex-col justify-center w-full h-full pb-8 my-2 contact pt-14 md:py-0">
+      <h1 className="mt-2 text-lg font-bold md:text-xl animate-[fadein_1s_ease-in-out] animitem ">
         {data[`${lang}`].contact_page.title}
       </h1>
       <input
@@ -19,7 +19,7 @@ export default function Contact(props) {
         onChange={(e) => setSubject(e.target.value)}
         placeholder={data[`${lang}`].contact_page.subject}
         className={
-          "w-full md:w-3/4 p-1 mt-2 rounded-xl text-slate-200 bg-slate-900 border-2 " +
+          "w-full md:w-3/4 p-1 mt-2 rounded-xl text-slate-200 bg-slate-900 border-2  animate-[fadein_1s_ease-in-out_0.1s] animitem " +
           (!subject.trim() ? "border-red-500" : "border-slate-600")
         }
       />
@@ -29,7 +29,7 @@ export default function Contact(props) {
         rows="5"
         placeholder={data[`${lang}`].contact_page.message}
         className={
-          "w-full md:w-3/4 p-1 mt-2 rounded-xl resize-vertical text-slate-200 bg-slate-900 border-2 " +
+          "w-full md:w-3/4 p-1 mt-2 rounded-xl resize-vertical text-slate-200 bg-slate-900 border-2 animate-[fadein_1s_ease-in-out_0.2s] animitem " +
           (!message.trim() ? "border-red-500" : "border-slate-600")
         }
       />
@@ -39,11 +39,11 @@ export default function Contact(props) {
             ? `mailto:linguafrancamusic1@gmail.com?subject=${subject}&body=${message}`
             : "#"
         }
-        className="w-full px-2 my-2 text-center transition-colors duration-200 ease-in-out bg-yellow-500 rounded-lg md:w-3/4 hover:cursor-pointer text-slate-900 hover:text-yellow-500 hover:bg-slate-800"
+        className="w-full px-2 my-2 text-center transition-colors duration-200 ease-in-out bg-yellow-500 rounded-lg md:w-3/4 hover:cursor-pointer text-slate-900 hover:text-yellow-500 hover:bg-slate-800  animate-[fadein_1s_ease-in-out_0.3s] animitem "
       >
         {data[`${lang}`].contact_page.submit}
       </a>
-      <p className="">
+      <p className=" animate-[fadein_1s_ease-in-out_0.4s] animitem ">
         {link[0]}
         <a
           className={
