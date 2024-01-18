@@ -17,14 +17,14 @@ export default function Music(props) {
       <p className="my-2 text-lg font-bold md:text-xl">
         {data[`${lang}`].music_page.newest_title}
       </p>
-      <div className="grid grid-cols-1 gap-2 pb-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 pb-8 md:grid-cols-2 lg:grid-cols-3">
         {timeCatalog.length > 0 ? (
           timeCatalog.map(function (c, i) {
             return (
               <div
                 key={"div-" + c.name}
                 className={
-                  `min-w-[250px] h-[350px] border-yellow-500 m-2 bg-slate-900 p-2 rounded-lg flex flex-col items-center justify-between text-center musicitem ${`animate-[fadein_1s_ease-in-out_${parseInt(1 + i)/10}s]`}`
+                  `min-w-[250px] h-[350px] border-yellow-500 my-2 bg-slate-900 p-2 rounded-lg flex flex-col items-center justify-between text-center musicitem ${`animate-[fadein_1s_ease-in-out_${parseInt(1 + i)/10}s]`}`
                 }
               >
                 <p className="font-semibold text-white md:text-lg">{c.name}</p>

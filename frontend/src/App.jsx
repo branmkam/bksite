@@ -29,11 +29,11 @@ function App() {
 
   return (
     //bg div
-    <div className="w-[100vw] animate-[fadein_0.8s_ease-in-out] h-[100vh] bg-scroll bg-center bg-repeat bg-cover bg-[url('bgimage.jpeg')]">
+    <div className="w-screen z-0 animate-[fadein_0.8s_ease-in-out] h-[100vh] bg-center bg-repeat bg-cover bg-[url('bgimage.jpeg')]">
       {/* //app div */}
-      <div className="w-full  bg-[#00000088] h-[100vh] fixed top-0 font-afacad text-slate-200">
+      <div className="w-screen bg-[#000000b4] h-[100vh] overflow-y-scroll fixed top-0 font-afacad text-slate-200 ">
         {/* languages */}
-        <div className="fixed z-40 flex flex-row justify-start p-0 bg-black rounded-lg right-2 animate-[comefromright_1s_ease-in-out_0s]">
+        <div className="fixed z-40 flex flex-row justify-start p-0rounded-lg right-2 animate-[comefromright_1s_ease-in-out_0s]">
           {langs.map((l) => (
             <span
               key={"lang-" + l}
@@ -49,7 +49,7 @@ function App() {
         </div>
 
         {/* mobile pseudo top menu */}
-        <div className="fixed top-0 w-full h-16 bg-black md:hidden animate-[comefromleft_1s_ease-in-out_0s]"></div>
+        <div className="fixed top-0 w-full h-14 bg-black md:hidden animate-[comefromleft_1s_ease-in-out_0s]"></div>
 
         {/* side homepage */}
         <p className="fixed z-20 flex flex-col justify-start h-full mt-1 md:mt-0 md:justify-center left-1 animate-[comefromleft_1s_ease-in-out_0s]">

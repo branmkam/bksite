@@ -22,7 +22,7 @@ export default function Homepage(props) {
       <h1 className="text-lg text-orange-400 transition md:text-2xl font-sigmar">
         {data[`${lang}`].homepage.text.toLowerCase()}
       </h1>
-      <img src="globespin.gif" className="z-0 mb-2 h-1/2" />
+      <img src="globespin-transparent.gif" className="z-0 mb-2 h-1/2" />
       <span className="text-2xl md:text-4xl">
         <a
           className="m-2 transition-colors duration-200 ease-in-out hover:text-yellow-500"

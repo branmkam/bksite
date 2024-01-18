@@ -11,6 +11,11 @@
 body {
   margin: 0;
   background-image: './public/bgimage.jpeg';
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 /*hold animations*/
