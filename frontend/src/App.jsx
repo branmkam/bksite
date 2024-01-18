@@ -28,7 +28,9 @@ function App() {
   }
 
   return (
-    <div className="w-full h-full font-afacad text-slate-200">
+    //bg div
+
+    <div className="w-full animate-[fadein_0.8s_ease-in-out] h-[100vh] fixed top-0 font-afacad text-slate-200 bg-scroll bg-cover bg-repeat bg-center bg-[url('bgimage.jpeg')]">
       {/* languages */}
       <div className="fixed z-40 flex flex-row justify-start p-0 bg-black rounded-lg right-2 animate-[comefromright_1s_ease-in-out_0s]">
         {langs.map((l) => (
