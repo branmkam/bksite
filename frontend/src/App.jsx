@@ -29,7 +29,7 @@ function App() {
 
   return (
     //bg div
-    <div className="w-screen z-0 animate-[fadein_0.8s_ease-in-out] h-[100vh] bg-center bg-repeat bg-cover bg-[url('bgimage.jpeg')]">
+    <div className="w-screen z-0 fixed top-0 animate-[fadein_0.8s_ease-in-out] h-[95%] md:h-[100vh] bg-center bg-repeat bg-cover bg-[url('bgimage.jpeg')]">
       {/* //app div */}
       <div className="w-screen bg-[#000000b4] h-[100vh] overflow-y-scroll fixed top-0 font-afacad text-slate-200 ">
         {/* languages */}
@@ -49,7 +49,7 @@ function App() {
         </div>
 
         {/* mobile pseudo top menu */}
-        <div className="fixed top-0 w-full h-14 bg-black md:hidden animate-[comefromleft_1s_ease-in-out_0s]"></div>
+        <div className="fixed top-0 z-80 w-full h-14 bg-black md:hidden animate-[comefromleft_1s_ease-in-out_0s]"></div>
 
         {/* side homepage */}
         <p className="fixed z-20 flex flex-col justify-start h-full mt-1 md:mt-0 md:justify-center left-1 animate-[comefromleft_1s_ease-in-out_0s]">
