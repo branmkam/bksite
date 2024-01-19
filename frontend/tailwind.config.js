@@ -16,6 +16,11 @@ export default {
           "0%": { opacity: 0 },
           "100%": { opacity: 1 },
         },
+        bouncein: {
+          "0%": { opacity: 0, transform: "translateY(-8px)"},
+          "80": { opacity: 0.8, transform: "translateY(4px)"},
+          "100%": { opacity: 1, transform: "translateY(0px)"},
+        },
         comefromright: {
           "0%": {
             transform: "translateX(100px)",
