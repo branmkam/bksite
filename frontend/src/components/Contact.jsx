@@ -36,7 +36,7 @@ export default function Contact(props) {
       <a
         href={
           legalEmail
-            ? `mailto:linguafrancamusic1@gmail.com?subject=${subject.replaceAll(/<*>/gi, '')}&body=${message.replaceAll(/<*>/gi, '')}`
+            ? `mailto:brankammusic@gmail.com?subject=${subject.replaceAll(/<*>/gi, '')}&body=${message.replaceAll(/<*>/gi, '')}`
             : "#"
         }
         className="w-full px-2 my-2 text-center transition-colors duration-200 ease-in-out bg-yellow-500 rounded-lg md:w-3/4 hover:cursor-pointer text-slate-900 hover:text-yellow-500 hover:bg-slate-800  animate-[fadein_1s_ease-in-out_0.3s] animitem "

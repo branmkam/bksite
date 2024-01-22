@@ -26,37 +26,37 @@ export default function Homepage(props) {
       <span className="text-2xl md:text-4xl">
         <a
           className="m-2 transition-colors duration-200 ease-in-out hover:text-yellow-500 hover"
-          href="https://www.instagram.com/linguafrancamusic"
+          href="https://www.instagram.com/brankam.music"
           target="_blank"
           rel="noreferrer"
         >
           <FontAwesomeIcon icon={faInstagram} className="contact__social" />
         </a>
-        <a
+        {/* <a
           className="m-2 transition-colors duration-200 ease-in-out hover:text-yellow-500"
           href="https://open.spotify.com/artist/16L4qVSdePL6JJKQfNTod1?si=83pz88ZMR3uPJYlqiyHUnA"
           target="_blank"
           rel="noreferrer"
         >
           <FontAwesomeIcon icon={faSpotify} className="contact__social" />
-        </a>
-        <a
+        </a> */}
+        {/* <a
           className="m-2 transition-colors duration-200 ease-in-out hover:text-yellow-500"
           href="https://bit.ly/linguafranca-yt"
           target="_blank"
           rel="noreferrer"
         >
           <FontAwesomeIcon icon={faYoutube} className="contact__social" />
-        </a>
+        </a> */}
         <a
           className="m-2 transition-colors duration-200 ease-in-out hover:text-yellow-500"
-          href="https://soundcloud.com/linguafranca-music"
+          href="https://soundcloud.com/brankam-music"
           target="_blank"
           rel="noreferrer"
         >
           <FontAwesomeIcon icon={faSoundcloud} className="contact__social" />
         </a>
-        <a
+        {/* <a
           className="m-2 transition-colors duration-200 ease-in-out hover:text-yellow-500"
           href="https://music.apple.com/us/artist/linguafranca/1581609961"
           target="_blank"
@@ -71,8 +71,9 @@ export default function Homepage(props) {
           rel="noreferrer"
         >
           <FontAwesomeIcon icon={faBandcamp} className="contact__social" />
-        </a>
+        </a> */}
       </span>
+      <p className="md:text-lg font-sigmar">{data[`${lang}`].homepage.coming_soon}</p>
     </div>
   );
 }

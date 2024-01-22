@@ -1,7 +1,8 @@
 {
   "en": {
     "homepage": {
-      "text": "new music out soon!"
+      "text": "new music out soon!",
+      "coming_soon": "spotify, apple music, youtube, and bandcamp will be added soon!"
     },
     "sidebar": {
       "about": "About",
@@ -40,7 +41,8 @@
   },
   "es": {
     "homepage": {
-      "text": "nueva música disponible pronto!"
+      "text": "nueva música disponible pronto!",
+      "coming_soon": "spotify, apple music, youtube, y bandcamp se añadirán pronto!"
     },
     "sidebar": {
       "about": "Sobre mí",
@@ -79,7 +81,8 @@
   },
   "it": {
     "homepage": {
-      "text": "nuova musica sarà rilasciata presto!"
+      "text": "nuova musica sarà rilasciata presto!",
+      "coming_soon": "spotify, apple music, youtube, e bandcamp si aggiungeranno presto!"
     },
     "sidebar": {
       "about": "Sull'artista",
