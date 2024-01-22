@@ -73,7 +73,7 @@ export default function Homepage(props) {
           <FontAwesomeIcon icon={faBandcamp} className="contact__social" />
         </a> */}
       </span>
-      <p className="md:text-lg font-sigmar">{data[`${lang}`].homepage.coming_soon}</p>
+      <p className="text-[12px] font-afacad">{data[`${lang}`].homepage.coming_soon}</p>
     </div>
   );
 }
