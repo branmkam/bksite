@@ -33,7 +33,7 @@ function App() {
       {/* //app div */}
       <div className="w-screen bg-[#000000b4] h-[100vh] overflow-y-scroll fixed top-0 font-afacad text-slate-200 ">
         {/* languages */}
-        <div className="fixed z-40 flex flex-row justify-start p-0rounded-lg right-2 animate-[comefromright_1s_ease-in-out_0s]">
+        <div className="fixed z-50 flex flex-row justify-start p-0rounded-lg right-2 animate-[comefromright_1s_ease-in-out_0s]">
           {langs.map((l) => (
             <span
               key={"lang-" + l}
@@ -49,10 +49,10 @@ function App() {
         </div>
 
         {/* mobile pseudo top menu */}
-        <div className="fixed top-0 z-80 w-full h-14 bg-black md:hidden animate-[comefromleft_1s_ease-in-out_0s]"></div>
+        <div className="fixed top-0 z-30 w-full h-14 bg-[#000000d0] md:hidden animate-[comefromleft_1s_ease-in-out_0s]"></div>
 
         {/* side homepage */}
-        <p className="fixed z-20 flex flex-col justify-start h-full mt-1 md:mt-0 md:justify-center left-1 animate-[comefromleft_1s_ease-in-out_0s]">
+        <p className="fixed z-50 flex flex-col justify-start h-full mt-1 md:mt-0 md:justify-center left-1 animate-[comefromleft_1s_ease-in-out_0s]">
           <img
             src="brankambubbleonlyvector.png"
             className="w-14 md:w-28 hover:brightness-125 hover:cursor-pointer"
@@ -61,12 +61,12 @@ function App() {
         </p>
 
         {/* side menu */}
-        <div className="fixed animate-[fadein_1s_ease-in-out] z-0 grid text-center text-sm justify-between grid-cols-2 mt-1 pl-16 gap-x-2 gap-y-0.5 md:my-2 min-[500px]:flex min-[500px]:mt-4 min-[500px]:gap-4 md:p-0 min-[500px]:flex-row md:flex md:flex-col md:gap-0 md:justify-center md:h-full md:m-1 md:text-right md:text-lg md:right-2">
+        <div className="fixed animate-[fadein_1s_ease-in-out] z-40 grid text-center text-sm justify-between grid-cols-2 mt-1 pl-16 gap-x-2 gap-y-0.5 md:my-2 min-[500px]:flex min-[500px]:mt-4 min-[500px]:gap-4 md:p-0 min-[500px]:flex-row md:flex md:flex-col md:gap-0 md:justify-center md:h-full md:m-1 md:text-right md:text-lg md:right-2">
           <p
             //flex flex-col justify-center h-full m-1 text-sm text-right tabs md:text-lg md:right-2
             //md:flex md:flex-col md:justify-center md:h-full md:m-2 text-sm md:text-right md:text-lg md:right-2
             className={
-              "z-0 menuitem md:animate-[comefromright_1s_ease-in-out_1.2s] transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
+              "z-50 menuitem md:animate-[comefromright_1s_ease-in-out_1.2s] transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
               (page == 1 && "text-red-500")
             }
             onClick={() => {
@@ -77,7 +77,7 @@ function App() {
           </p>
           <p
             className={
-              "z-0 menuitem md:animate-[comefromright_1s_ease-in-out_1.7s] transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
+              "z-50 menuitem md:animate-[comefromright_1s_ease-in-out_1.7s] transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
               (page == 2 && "text-red-500")
             }
             onClick={() => {
@@ -88,7 +88,7 @@ function App() {
           </p>
           <p
             className={
-              "z-0 menuitem md:animate-[comefromright_1s_ease-in-out_2.2s] transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
+              "menuitem md:animate-[comefromright_1s_ease-in-out_2.2s] transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
               (page == 3 && "text-red-500")
             }
             onClick={() => {
@@ -99,7 +99,7 @@ function App() {
           </p>
           <p
             className={
-              "z-0 menuitem md:animate-[comefromright_1s_ease-in-out_2.7s] transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
+              "z-50 menuitem md:animate-[comefromright_1s_ease-in-out_2.7s] transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
               (page == 4 && "text-red-500")
             }
             onClick={() => {
