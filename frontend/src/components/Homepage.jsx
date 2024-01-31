@@ -9,6 +9,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import data from "../data/translate.json";
+import Countdown from "./Countdown";
 
 export default function Homepage(props) {
   const { lang } = props;
@@ -22,7 +23,25 @@ export default function Homepage(props) {
       <h1 className="text-lg text-orange-400 transition md:text-2xl font-sigmar">
         {data[`${lang}`].homepage.text.toLowerCase()}
       </h1>
-      <img src="globespin-transparent.gif" className="z-0 mb-2 h-1/2" />
+
+      <div className="w-full m-6 text-center h-1/2">
+        <div className="relative w-full h-full">
+          <img
+            className="absolute z-0 object-contain w-full h-full brightness-[50%]"
+            src="globespin-transparent.gif"
+          />
+          <div className="relative z-10 flex flex-col items-center justify-center w-full h-full">
+            <Countdown
+              className={"font-afacad font-bold text-4xl sm:text-5xl drop-shadow-[0_20px_10px_rgba(0,0,0,1)] md:text-7xl text-orange-400"}
+              time={"2024-02-12T00:00:00:000"}
+              seconds
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* <img src="globespin-transparent.gif" className="z-0 w-1/2 mb-2 h-1/2" /> */}
+
       <span className="text-2xl md:text-4xl">
         <a
           className="m-2 transition-colors duration-200 ease-in-out hover:text-yellow-500 hover"
@@ -73,7 +92,9 @@ export default function Homepage(props) {
           <FontAwesomeIcon icon={faBandcamp} className="contact__social" />
         </a> */}
       </span>
-      <p className="text-[12px] font-afacad">{data[`${lang}`].homepage.coming_soon}</p>
+      <p className="text-[12px] font-afacad">
+        {data[`${lang}`].homepage.coming_soon}
+      </p>
     </div>
   );
 }
