@@ -164,7 +164,7 @@ function App() {
             </p>
 
             {/* side menu */}
-            <div className="fixed md:animate-[fadein_1s_ease-in-out] z-0 text-start mt-20 left-2 text-sm justify-between hidden md:flex md:flex-col md:gap-0 md:justify-center md:h-full md:m-1 md:text-right md:text-lg md:right-2">
+            <div className="fixed md:animate-[fadein_1s_ease-in-out] z-0 text-start mt-20 right-0 text-sm justify-between hidden md:flex md:flex-col md:gap-0 md:justify-center md:h-full md:m-1 md:text-right md:text-lg md:right-2">
               <p
                 //flex flex-col justify-center h-full m-1 text-sm text-right tabs md:text-lg md:right-2
                 //md:flex md:flex-col md:justify-center md:h-full md:m-2 text-sm md:text-right md:text-lg md:right-2

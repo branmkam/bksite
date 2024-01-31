@@ -13,7 +13,7 @@ export default function Music(props) {
     .slice(0, 6);
 
   return (
-    <div className="z-20 flex flex-col justify-center w-full h-full pb-8 my-2 music pt-14 md:py-0">
+    <div className="z-50 flex flex-col justify-center w-full h-full pb-8 my-2 music pt-14 md:py-0">
       <p className="my-2 text-lg font-bold md:text-xl">
         {data[`${lang}`].music_page.newest_title}
       </p>

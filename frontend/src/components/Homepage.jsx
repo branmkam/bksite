@@ -17,10 +17,10 @@ export default function Homepage(props) {
   return (
     <div
       className={
-        "h-[95vh] w-[100%] mt-2 flex flex-col text-center justify-center items-center animate-[fadein_1s_ease-in-out]"
+        "h-[95vh] w-[100%] z-50 mt-2 flex flex-col text-center justify-center items-center animate-[fadein_1s_ease-in-out]"
       }
     >
-      <h1 className="text-lg text-orange-400 transition md:text-2xl font-sigmar">
+      <h1 className="z-50 text-lg text-orange-400 transition md:text-2xl font-sigmar">
         {data[`${lang}`].homepage.text.toLowerCase()}
       </h1>
 
@@ -42,7 +42,7 @@ export default function Homepage(props) {
 
       {/* <img src="globespin-transparent.gif" className="z-0 w-1/2 mb-2 h-1/2" /> */}
 
-      <span className="text-2xl md:text-4xl">
+      <span className="z-50 text-2xl md:text-4xl">
         <a
           className="m-2 transition-colors duration-200 ease-in-out hover:text-yellow-500 hover"
           href="https://www.instagram.com/brankam.music"
@@ -92,7 +92,7 @@ export default function Homepage(props) {
           <FontAwesomeIcon icon={faBandcamp} className="contact__social" />
         </a> */}
       </span>
-      <p className="text-[12px] font-afacad">
+      <p className="text-[12px] z-50 font-afacad">
         {data[`${lang}`].homepage.coming_soon}
       </p>
     </div>
