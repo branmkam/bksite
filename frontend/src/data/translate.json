@@ -5,6 +5,7 @@
       "coming_soon": "spotify, apple music, youtube, and bandcamp will be added soon!"
     },
     "sidebar": {
+      "home": "Home",
       "about": "About",
       "music": "Music",
       "shows": "Shows",
@@ -45,6 +46,7 @@
       "coming_soon": "spotify, apple music, youtube, y bandcamp se añadirán pronto!"
     },
     "sidebar": {
+      "home": "Inicio",
       "about": "Sobre mí",
       "music": "Música",
       "shows": "Actuaciones",
@@ -85,6 +87,7 @@
       "coming_soon": "spotify, apple music, youtube, e bandcamp si aggiungeranno presto!"
     },
     "sidebar": {
+      "home": "Pagina Iniziale",
       "about": "Sull'artista",
       "music": "Musica",
       "shows": "Spettacoli",
@@ -113,7 +116,7 @@
       "subject": "Soggetto",
       "message": "Scrivi il tuo messaggio qui...",
       "submit": "Invialo",
-      "link": "O vadi |all'inizio| per vedere le mie reti sociali!"
+      "link": "O vadi |alla pagina iniziale| per vedere le mie reti sociali!"
     },
     "utils": {
       "arent_any": "Non c'è niente adesso, ma ci sarà qualcosa presto!"
