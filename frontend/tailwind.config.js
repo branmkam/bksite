@@ -34,10 +34,7 @@ export default {
         },
         comefromleft: {
           "0%": {
-            transform: "translateX(-100px)",
-          },
-          "90%": {
-            transform: "translateX(8px)"
+            transform: "translateX(-200px)",
           },
           "100%": {
             transform: "translateX(0px)"

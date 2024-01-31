@@ -6,8 +6,6 @@ import About from "./components/About";
 import Music from "./components/Music";
 import Shows from "./components/Shows";
 import Contact from "./components/Contact";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   const langs = ["en", "es", "it"];
