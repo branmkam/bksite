@@ -31,7 +31,7 @@ export default function Homepage(props) {
             src="globespin-transparent.gif"
           />
           <div className="relative z-10 flex flex-col items-center justify-center w-full h-full">
-            <Countddown
+            <Countdown
               className={"font-afacad font-bold text-4xl sm:text-5xl drop-shadow-[0_20px_10px_rgba(0,0,0,1)] md:text-7xl text-orange-400"}
               time={"2024-02-12T00:00:00:000"}
               seconds
