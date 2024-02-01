@@ -65,9 +65,9 @@ function App() {
 
         {/* mobile menu */}
         {isMobile && menu && (
-          <div className="fixed top-0 z-20 w-36 h-full md:z-0 bg-[#000000e0] md:hidden animate-[comefromleft_1s_ease-in-out_0s] pl-2 pt-2">
+          <div className="fixed top-0 z-20 w-36 h-full md:z-0 bg-[#000000e0] md:hidden animate-[comefromleft_0.4s_ease-in-out_0s] pl-2 pt-2">
             {/* side menu */}
-            <div className="md:animate-[fadein_1s_ease-in-out] md:z-0 z-40 text-start mt-16 ml-2 text-base flex flex-col gap-2">
+            <div className="md:animate-[fadein_0.4s_ease-in-out] md:z-0 z-40 text-start mt-16 ml-2 text-base flex flex-col gap-2">
               <p
                 //flex flex-col justify-center h-full m-1 text-sm text-right tabs md:text-lg md:right-2
                 //md:flex md:flex-col md:justify-center md:h-full md:m-2 text-sm md:text-right md:text-lg md:right-2
