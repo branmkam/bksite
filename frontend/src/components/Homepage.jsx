@@ -20,7 +20,7 @@ export default function Homepage(props) {
         "h-[95vh] w-[100%] z-50 mt-2 flex flex-col text-center justify-center items-center animate-[fadein_1s_ease-in-out]"
       }
     >
-      <h1 className="z-50 text-lg text-orange-400 transition md:text-2xl font-sigmar">
+      <h1 className="z-10 text-lg text-orange-400 transition md:text-2xl font-sigmar">
         {data[`${lang}`].homepage.text.toLowerCase()}
       </h1>
 
@@ -92,7 +92,7 @@ export default function Homepage(props) {
           <FontAwesomeIcon icon={faBandcamp} className="contact__social" />
         </a> */}
       </span>
-      <p className="text-[12px] z-50 font-afacad">
+      <p className="text-[12px] z-10 font-afacad">
         {data[`${lang}`].homepage.coming_soon}
       </p>
     </div>
