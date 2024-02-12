@@ -2,6 +2,7 @@
   "en": {
     "homepage": {
       "text": "new music out soon!",
+      "new_music": "new single out Feb 23! pre-save now!",
       "coming_soon": "spotify, apple music, youtube, and bandcamp will be added soon!"
     },
     "sidebar": {
@@ -43,6 +44,7 @@
   "es": {
     "homepage": {
       "text": "nueva música disponible pronto!",
+      "new_music": "nuevo sencillo disponible el 23 de feb.! guárdalo ahora!",
       "coming_soon": "spotify, apple music, youtube, y bandcamp se añadirán pronto!"
     },
     "sidebar": {
@@ -84,6 +86,7 @@
   "it": {
     "homepage": {
       "text": "nuova musica sarà rilasciata presto!",
+      "new_music": "nuovo singolo disponibile il 23 di feb.! guardalo adesso!",
       "coming_soon": "spotify, apple music, youtube, e bandcamp si aggiungeranno presto!"
     },
     "sidebar": {

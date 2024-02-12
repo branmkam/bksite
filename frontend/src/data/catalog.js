@@ -1,4 +1,4 @@
-import ParseISO from "./ParseISO";
+// import ParseISO from "./ParseISO";
 
 const catalog = [
   {
@@ -32,26 +32,23 @@ const catalog = [
         "https://music.apple.com/us/album/expectations/1670519367?i=1670519370",
     },
   },
-  ...(new Date() >= ParseISO("2024-02-12T00:00:00")
-    ? [
-        {
-          name: "Charlottean",
-          type: "single",
-          release_date: "2024-02-23T00:00:00",
-          image: "./charlotteancover2.jpg",
-          collab_artists: [
-            {
-              name: "Aidan Cundiff",
-              link: "https://music.apple.com/ph/artist/aidan-cundiff/1460316882",
-            },
-          ],
-          platforms: {
-            presave:
-              "https://distrokid.com/hyperfollow/brankam/charlottean-feat-aidan-cundiff-2?utm_campaign=website&utm_medium=Email+&utm_source=SendGrid",
-          },
-        },
-      ]
-    : []),
+  // ...(new Date() >= ParseISO("2024-02-12T00:00:00")
+  {
+    name: "Charlottean",
+    type: "single",
+    release_date: "2024-02-23T00:00:00",
+    image: "./charlotteancover2.jpg",
+    collab_artists: [
+      {
+        name: "Aidan Cundiff",
+        link: "https://music.apple.com/ph/artist/aidan-cundiff/1460316882",
+      },
+    ],
+    platforms: {
+      presave:
+        "https://distrokid.com/hyperfollow/brankam/charlottean-feat-aidan-cundiff-2?utm_campaign=website&utm_medium=Email+&utm_source=SendGrid",
+    },
+  },
 ];
 
 export default catalog;
