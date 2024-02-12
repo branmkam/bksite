@@ -10,9 +10,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import data from "../data/translate.json";
 import Countdown from "./Countdown";
+import ParseISO from "../data/ParseISO";
 
 export default function Homepage(props) {
   const { lang } = props;
+  const afterTime = new Date() < ParseISO("2024-02-12T00:00:00");
 
   return (
     <div
@@ -21,22 +23,52 @@ export default function Homepage(props) {
       }
     >
       <h1 className="z-10 text-lg text-orange-400 transition md:text-2xl font-sigmar">
-        {data[`${lang}`].homepage.text.toLowerCase()}
+        {afterTime ? (
+          data[`${lang}`].homepage.text.toLowerCase()
+        ) : (
+          <a
+            className="underline hover:text-orange-300 cursor-pointer"
+            href="https://distrokid.com/hyperfollow/brankam/charlottean-feat-aidan-cundiff-2?utm_campaign=website&utm_medium=Email+&utm_source=SendGrid"
+            rel="noreferrer"
+            target="_blank"
+          >
+            new single out Feb 23! <br />
+            pre-save now
+          </a>
+        )}
       </h1>
 
       <div className="w-full m-2 text-center md:m-6 h-1/2">
         <div className="relative w-full h-full">
-          <img
-            className="absolute z-0 object-contain w-full h-full brightness-[50%]"
-            src="globespin-transparent.gif"
-          />
-          <div className="relative z-10 flex flex-col items-center justify-center w-full h-full">
-            <Countdown
-              className={"font-afacad font-bold text-4xl sm:text-5xl drop-shadow-[0_20px_10px_rgba(0,0,0,1)] md:text-7xl text-orange-400"}
-              time={"2024-02-12T00:00:00:000"}
-              seconds
-            />
-          </div>
+          {afterTime ? (
+            <>
+              <img
+                className="absolute z-0 object-contain w-full h-full brightness-[50%]"
+                src="globespin-transparent.gif"
+              />
+              <div className="relative z-10 flex flex-col items-center justify-center w-full h-full">
+                <Countdown
+                  className={
+                    "font-afacad font-bold text-4xl sm:text-5xl drop-shadow-[0_20px_10px_rgba(0,0,0,1)] md:text-7xl text-orange-400"
+                  }
+                  time={"2024-02-12T00:00:00:000"}
+                  seconds
+                />
+              </div>
+            </>
+          ) : (
+            <a
+              className="underline hover:text-orange-300 cursor-pointer"
+              href="https://distrokid.com/hyperfollow/brankam/charlottean-feat-aidan-cundiff-2?utm_campaign=website&utm_medium=Email+&utm_source=SendGrid"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                className="hover:brightness-125 absolute z-0 object-contain w-full h-full brightness-[100%]"
+                src="./charlotteancover2.jpg"
+              />
+            </a>
+          )}
         </div>
       </div>
 
@@ -51,22 +83,22 @@ export default function Homepage(props) {
         >
           <FontAwesomeIcon icon={faInstagram} className="contact__social" />
         </a>
-        {/* <a
+        <a
           className="m-2 transition-colors duration-200 ease-in-out hover:text-yellow-500"
           href="https://open.spotify.com/artist/16L4qVSdePL6JJKQfNTod1?si=83pz88ZMR3uPJYlqiyHUnA"
           target="_blank"
           rel="noreferrer"
         >
           <FontAwesomeIcon icon={faSpotify} className="contact__social" />
-        </a> */}
-        {/* <a
+        </a>
+        <a
           className="m-2 transition-colors duration-200 ease-in-out hover:text-yellow-500"
           href="https://bit.ly/linguafranca-yt"
           target="_blank"
           rel="noreferrer"
         >
           <FontAwesomeIcon icon={faYoutube} className="contact__social" />
-        </a> */}
+        </a>
         <a
           className="m-2 transition-colors duration-200 ease-in-out hover:text-yellow-500"
           href="https://soundcloud.com/brankam-music"
@@ -75,7 +107,7 @@ export default function Homepage(props) {
         >
           <FontAwesomeIcon icon={faSoundcloud} className="contact__social" />
         </a>
-        {/* <a
+        <a
           className="m-2 transition-colors duration-200 ease-in-out hover:text-yellow-500"
           href="https://music.apple.com/us/artist/linguafranca/1581609961"
           target="_blank"
@@ -90,11 +122,11 @@ export default function Homepage(props) {
           rel="noreferrer"
         >
           <FontAwesomeIcon icon={faBandcamp} className="contact__social" />
-        </a> */}
+        </a>
+        {/* <span className="text-[12px] z-10 font-afacad">
+          {data[`${lang}`].homepage.coming_soon}
+        </span> */}
       </span>
-      <p className="text-[12px] z-10 font-afacad">
-        {data[`${lang}`].homepage.coming_soon}
-      </p>
     </div>
   );
 }

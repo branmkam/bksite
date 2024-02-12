@@ -7,6 +7,8 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
+import { faFloppyDisk } from "@fortawesome/free-solid-svg-icons";
+
 const symbols = {
   apple: faApple,
   bandcamp: faBandcamp,
@@ -14,6 +16,7 @@ const symbols = {
   soundcloud: faSoundcloud,
   spotify: faSpotify,
   youtube: faYoutube,
+  presave: faFloppyDisk,
 };
 
 export default symbols;
