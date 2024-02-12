@@ -65,7 +65,7 @@ export default function Homepage(props) {
             >
               <img
                 className="hover:brightness-125 absolute z-0 object-contain w-full h-full brightness-[100%]"
-                src="./charlotteancover2.jpg"
+                src="./charlotteangif.gif"
               />
             </a>
           )}
