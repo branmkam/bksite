@@ -19,7 +19,7 @@ export default function Homepage(props) {
   return (
     <div
       className={
-        "h-[95vh] w-[100%] z-50 mt-2 flex flex-col text-center justify-center items-center animate-[fadein_1s_ease-in-out]"
+        "h-[95vh] z-50 mt-2 flex flex-col text-center justify-center items-center animate-[fadein_1s_ease-in-out]"
       }
     >
       <h1 className="z-10 text-lg text-orange-400 transition md:text-2xl font-sigmar">
@@ -33,35 +33,18 @@ export default function Homepage(props) {
         </a>
       </h1>
 
-      <div className="w-full m-2 text-center md:m-6 h-1/2">
-        <div className="relative w-full h-full">
-          {/*// <>
-            //   <img
-            //     className="absolute z-0 object-contain w-full h-full brightness-[50%]"
-            //     src="globespin-transparent.gif"
-            //   />
-            //   <div className="relative z-10 flex flex-col items-center justify-center w-full h-full">
-            //     <Countdown
-            //       className={
-            //         "font-afacad font-bold text-4xl sm:text-5xl drop-shadow-[0_20px_10px_rgba(0,0,0,1)] md:text-7xl text-orange-400"
-            //       }
-            //       time={"2024-02-12T00:00:00:000"}
-            //       seconds
-            //     />
-            //   </div>
-            // </>*/}
-          <a
-            className="underline cursor-pointer hover:text-orange-300"
-            href="https://distrokid.com/hyperfollow/brankam/charlottean-feat-aidan-cundiff-2?utm_campaign=website&utm_medium=Email+&utm_source=SendGrid"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <img
-              className="hover:brightness-125 absolute z-0 object-contain w-full h-full brightness-[100%]"
-              src="./charlotteangif.gif"
-            />
-          </a>
-        </div>
+      <div className="m-2 text-center md:m-6 h-1/2">
+        <a
+          className="underline cursor-pointer hover:text-orange-300"
+          href="https://distrokid.com/hyperfollow/brankam/charlottean-feat-aidan-cundiff-2?utm_campaign=website&utm_medium=Email+&utm_source=SendGrid"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img
+            className="hover:brightness-125 z-0 object-contain h-full brightness-[100%]"
+            src="./charlotteangif.gif"
+          />
+        </a>
       </div>
 
       {/* <img src="globespin-transparent.gif" className="z-0 w-1/2 mb-2 h-1/2" /> */}

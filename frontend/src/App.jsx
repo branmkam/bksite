@@ -221,7 +221,7 @@ function App() {
         </div>
 
         {/* big div */}
-        <div className="z-40 w-screen pl-4 pr-6 md:m-0 md:pl-28 md:pr-28">
+        <div className="z-40 w-screen pr-6 pl-z md:m-0 md:pl-36 md:pr-28">
           {/* <img src="globespin.gif" className="fixed z-0 brightness-50 h-1/2" /> */}
           {renderSwitch(page)}
         </div>
