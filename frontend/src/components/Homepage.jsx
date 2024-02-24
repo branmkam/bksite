@@ -60,7 +60,7 @@ export default function Homepage(props) {
         </a>
         <a
           className="m-2 transition-colors duration-200 ease-in-out hover:text-yellow-500"
-          href="https://open.spotify.com/artist/16L4qVSdePL6JJKQfNTod1?si=83pz88ZMR3uPJYlqiyHUnA"
+          href="https://open.spotify.com/artist/65tjsMZHYf3J7nrsb1vTLn?si=mC1l8PAcQ6yxvUE0NFJtIA"
           target="_blank"
           rel="noreferrer"
         >
@@ -68,7 +68,7 @@ export default function Homepage(props) {
         </a>
         <a
           className="m-2 transition-colors duration-200 ease-in-out hover:text-yellow-500"
-          href="https://bit.ly/linguafranca-yt"
+          href="https://www.youtube.com/channel/UCESV-XJQy_RCjkPuq93j1lg"
           target="_blank"
           rel="noreferrer"
         >
@@ -84,7 +84,7 @@ export default function Homepage(props) {
         </a>
         <a
           className="m-2 transition-colors duration-200 ease-in-out hover:text-yellow-500"
-          href="https://music.apple.com/us/artist/linguafranca/1581609961"
+          href="https://music.apple.com/us/artist/brankam/1729262314"
           target="_blank"
           rel="noreferrer"
         >
@@ -92,7 +92,7 @@ export default function Homepage(props) {
         </a>
         <a
           className="m-2 transition-colors duration-200 ease-in-out hover:text-yellow-500"
-          href="https://linguafranca1.bandcamp.com/album/waiting-for-you"
+          href="https://brankam.bandcamp.com/"
           target="_blank"
           rel="noreferrer"
         >
