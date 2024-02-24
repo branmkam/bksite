@@ -45,8 +45,12 @@ const catalog = [
       },
     ],
     platforms: {
-      presave:
-        "https://distrokid.com/hyperfollow/brankam/charlottean-feat-aidan-cundiff-2?utm_campaign=website&utm_medium=Email+&utm_source=SendGrid",
+      spotify:
+        "https://open.spotify.com/album/0EzD0TexIW0qhUAnjzbfxp?si=XaCk2SarQLmsQ0tfh04l3w",
+      youtube: "https://www.youtube.com/watch?v=vr1utDzB2mQ",
+      apple:
+        "https://music.apple.com/us/album/charlottean-feat-aidan-cundiff-single/1730290640?uo=4",
+      bandcamp: "https://brankam.bandcamp.com/track/charlottean",
     },
   },
 ];
