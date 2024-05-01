@@ -10,6 +10,7 @@
       "about": "About",
       "music": "Music",
       "shows": "Shows",
+      "filmscoring": "Film Scores",
       "contact": "Contact"
     },
     "about_page": {
@@ -25,6 +26,9 @@
     },
     "music_page": {
       "newest_title": "Newest Releases"
+    },
+    "film_page": {
+      "title": "Film Scores"
     },
     "shows_page": {
       "upcoming_title": "Upcoming Shows",
