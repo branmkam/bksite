@@ -12,14 +12,11 @@ export default function FilmScoring(props) {
       <h1 className="my-2 text-xl font-bold md:mt-4">
         {data[`${lang}`].film_page.title}
       </h1>
-      <p className="mb-8">
-        Besides being a producer and instrumentalist, <b>brankam</b> also has
-        had the opportunity to score for short films. From whimsical moments to
-        rough scenes, his music has been a backdrop that has amplified the hard
-        work of the filmmakers he has collaborated with.
-      </p>
+      <p className="mb-8 text-lg">{data[`${lang}`].film_page.text}</p>
       <div className="flex flex-col gap-8">
-        <h2 className="text-xl">View a summary of his film scores below: </h2>
+        <h2 className="text-xl font-bold text-center md:text-2xl">
+        {data[`${lang}`].film_page.view}
+        </h2>
         <div className="flex flex-col gap-8 md:justify-center md:items-center md:flex-row">
           <div className="flex flex-col gap-2 md:w-1/4">
             <span className="text-xl font-bold md:text-2xl text-start md:text-end grow">
@@ -27,7 +24,7 @@ export default function FilmScoring(props) {
             </span>
             <div className="flex flex-row flex-wrap items-end md:text-right md:gap-2 md:flex-col">
               <span className="text-lg grow">Dir. Jack Gentry</span>
-              <span className="text-lg grow">Comedy/Drama</span>
+              <span className="text-lg grow">{data[`${lang}`].film_page.genre_1}</span>
               <span className="text-lg grow">2023</span>
             </div>
           </div>
@@ -47,7 +44,7 @@ export default function FilmScoring(props) {
             </span>
             <div className="flex flex-row flex-wrap items-end md:text-right md:gap-2 md:flex-col">
               <span className="text-lg grow">Dir. Kolby Oglesby</span>
-              <span className="text-lg grow">Comedy/Drama</span>
+              <span className="text-lg grow">{data[`${lang}`].film_page.genre_2}</span>
               <span className="text-lg grow">2022</span>
             </div>
           </div>
@@ -67,7 +64,7 @@ export default function FilmScoring(props) {
             </span>
             <div className="flex flex-row flex-wrap items-end md:text-right md:gap-2 md:flex-col">
               <span className="text-lg grow">Dir. Bailey Johnson</span>
-              <span className="text-lg grow">Romance</span>
+              <span className="text-lg grow">{data[`${lang}`].film_page.genre_3}</span>
               <span className="text-lg grow">2022</span>
             </div>
           </div>

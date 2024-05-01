@@ -27,12 +27,17 @@
     "music_page": {
       "newest_title": "Newest Releases"
     },
-    "film_page": {
-      "title": "Film Scores"
-    },
     "shows_page": {
       "upcoming_title": "Upcoming Shows",
       "past_title": "Past Shows"
+    },
+    "film_page": {
+      "title": "Film Scores",
+      "genre_1": "Comedy/Drama",
+      "genre_2": "Comedy/Drama",
+      "genre_3": "Romance",
+      "text": "Besides being a producer and instrumentalist, brankam also adores scoring for film. From whimsical moments to tense standoffs, his music has been a backdrop that has amplified the hard work of the filmmakers he has collaborated with. Although he has only provided music for short films thus far, he hopes to eventually score a feature-length film.",
+      "view": "View a summary of his film scores below:"
     },
     "contact_page": {
       "title": "Contact Me!",
@@ -56,6 +61,7 @@
       "about": "Sobre mí",
       "music": "Música",
       "shows": "Actuaciones",
+      "filmscoring": "Películas",
       "contact": "Contáctame"
     },
     "about_page": {
@@ -75,6 +81,14 @@
     "shows_page": {
       "upcoming_title": "Próximas Actuaciones",
       "past_title": "Actuaciones Previas"
+    },
+    "film_page": {
+      "title": "Bandas Sonoras",
+      "genre_1": "Comedia/Drama",
+      "genre_2": "Comedia/Drama",
+      "genre_3": "Romance",
+      "text": "Besides being a producer and instrumentalist, brankam also adores scoring for film. From whimsical moments to tense standoffs, his music has been a backdrop that has amplified the hard work of the filmmakers he has collaborated with. Although he has only provided music for short films thus far, he hopes to eventually score a feature-length film.",
+      "view": "Abajo se encuentran las películas en las que ha trabajado:"
     },
     "contact_page": {
       "title": "¡Contáctame!",
@@ -98,6 +112,7 @@
       "about": "Sull'artista",
       "music": "Musica",
       "shows": "Spettacoli",
+      "filmscoring": "Per i Film",
       "contact": "Contattimi"
     },
     "about_page": {
@@ -117,6 +132,14 @@
     "shows_page": {
       "upcoming_title": "Prossimi Spettacoli",
       "past_title": "Spettacoli Già Passati"
+    },
+    "film_page": {
+      "title": "Colonne Sonore",
+      "genre_1": "Commedia/Dramma",
+      "genre_2": "Comedia/Dramma",
+      "genre_3": "Storia d'amore",
+      "text": "Besides being a producer and instrumentalist, brankam also adores scoring for film. From whimsical moments to tense standoffs, his music has been a backdrop that has amplified the hard work of the filmmakers he has collaborated with. Although he has only provided music for short films thus far, he hopes to eventually score a feature-length film.",
+      "view": "Sotto si può vedere i film a cui ha lavorato:"
     },
     "contact_page": {
       "title": "Contattimi!",
