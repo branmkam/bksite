@@ -5,6 +5,7 @@ import Homepage from "./components/Homepage";
 import About from "./components/About";
 import Music from "./components/Music";
 import Shows from "./components/Shows";
+import FilmScoring from "./components/FilmScoring";
 import Contact from "./components/Contact";
 
 function App() {
@@ -36,6 +37,8 @@ function App() {
       case 3:
         return <Shows lang={lang} />;
       case 4:
+        return <FilmScoring lang={lang} />;
+      case 5:
         return <Contact lang={lang} setPage={setPage} />;
       default:
         return <Homepage lang={lang} />;
@@ -130,6 +133,18 @@ function App() {
                   setMenu(false);
                 }}
               >
+                {data[`${lang}`].sidebar.filmscoring}
+              </p>
+              <p
+                className={
+                  "z-50 menuitem md:animate-[comefromright_1s_ease-in-out_3.2s] transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
+                  (page == 5 && "text-red-500")
+                }
+                onClick={() => {
+                  setPage(5);
+                  setMenu(false);
+                }}
+              >
                 {data[`${lang}`].sidebar.contact}
               </p>
             </div>
@@ -207,6 +222,19 @@ function App() {
                 }
                 onClick={() => {
                   setPage(4);
+                  setMenu(false);
+                }}
+              >
+                {data[`${lang}`].sidebar.filmscoring}
+              </p>
+              <p
+                className={
+                  "z-50 menuitem md:animate-[comefromright_1s_ease-in-out_3.2s] transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer " +
+                  (page == 5 && "text-red-500")
+                }
+                onClick={() => {
+                  setPage(5);
+                  setMenu(false);
                 }}
               >
                 {data[`${lang}`].sidebar.contact}
@@ -221,7 +249,7 @@ function App() {
         </div>
 
         {/* big div */}
-        <div className="z-40 w-screen pr-6 pl-6 md:m-0 md:pl-36 md:pr-28">
+        <div className="z-40 w-screen pl-6 pr-6 md:m-0 md:pl-36 md:pr-28">
           {/* <img src="globespin.gif" className="fixed z-0 brightness-50 h-1/2" /> */}
           {renderSwitch(page)}
         </div>
