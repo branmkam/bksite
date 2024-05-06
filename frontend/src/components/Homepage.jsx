@@ -31,7 +31,7 @@ export default function Homepage(props) {
         {data[`${lang}`].homepage.text.toLowerCase()}
         {/* </a> */}
       </h1>
-      <h2 className="m-1 text-lg text-orange-400 font-sigmar">
+      <h2 className="m-1 text-sm text-orange-400 sm:text-base md:text-lg font-sigmar">
         {data[`${lang}`].homepage.reveal.toLowerCase()}
       </h2>
 
