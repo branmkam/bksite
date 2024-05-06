@@ -3,6 +3,7 @@
     "homepage": {
       "text": "new music out soon!",
       "new_music": "Charlottean out now!",
+      "reveal": "Details for my next song revealed in:",
       "coming_soon": "spotify, apple music, youtube, and bandcamp will be added soon!"
     },
     "sidebar": {
@@ -53,6 +54,7 @@
   "es": {
     "homepage": {
       "text": "nueva música disponible pronto!",
+      "reveal": "Los detalles de mi próxima canción se revelarán en:",
       "new_music": "¡Charlottean disponible ya!",
       "coming_soon": "spotify, apple music, youtube, y bandcamp se añadirán pronto!"
     },
@@ -104,6 +106,7 @@
   "it": {
     "homepage": {
       "text": "nuova musica sarà rilasciata presto!",
+      "reveal": "I dettagli della mia prossima canzone si riveleranno in:",
       "new_music": "Charlottean disponibile già!",
       "coming_soon": "spotify, apple music, youtube, e bandcamp si aggiungeranno presto!"
     },
