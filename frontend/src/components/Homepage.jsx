@@ -28,10 +28,10 @@ export default function Homepage(props) {
           rel="noreferrer"
           target="_blank"
         > */}
-        {data[`${lang}`].homepage.text.toLowerCase()}
+        {data[`${lang}`].homepage.text}
         {/* </a> */}
       </h1>
-      <h2 className="m-1 text-lg text-orange-400 underline hover:text-orange-200 sm:text-xl md:text-2xl font-sigmar">
+      {/* <h2 className="m-1 text-lg text-orange-400 underline hover:text-orange-200 sm:text-xl md:text-2xl font-sigmar">
         <a
           target="_blank"
           rel="noreferrer"
@@ -39,7 +39,7 @@ export default function Homepage(props) {
         >
           Presave
         </a>
-      </h2>
+      </h2> */}
 
       <div className="relative flex flex-col m-2 text-center md:m-6 h-1/2">
         <a
@@ -49,15 +49,15 @@ export default function Homepage(props) {
           target="_blank"
         >
           <img
-            className="hover:brightness-125 z-0 object-contain h-full brightness-[60%]"
+            className="hover:brightness-125 z-0 object-contain h-full brightness-[102%]"
             src="https://distrokid.imgix.net/http%3A%2F%2Fgather.fandalism.com%2F2209533--EDA0FC44-AF5A-4D2F-BF8CF432ABD7E5F8--0--3367815--troppofinal.png?fm=jpg&q=75&w=800&s=31ab52b5e045f9e69e9be1a14f91b3cc"
           />
         </a>
-        <Countdown
+        {/* <Countdown
           className="absolute flex items-center justify-center w-full h-full text-4xl font-bold text-orange-400 drop-shadow-[8px_35px_10px_rgba(0,0,0,0.1)] align-center md:text-6xl lg:text-8xl"
           time={"2024-05-24T00:00:00"}
           seconds
-        />
+        /> */}
       </div>
       <span className="z-50 text-2xl md:text-4xl">
         <a

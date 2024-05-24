@@ -2,21 +2,17 @@
 
 const catalog = [
   {
-    name: "COUNTERFEIT (linguafranca remix)",
+    name: "Troppo",
     type: "single",
-    release_date: "2023-11-06T00:00:00",
+    release_date: "2024-05-24T00:00:00",
     image:
-      "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/97/11/2d/97112d87-0955-f189-98db-161cabcf2cdc/artwork.jpg/316x316bb.webp",
-    collab_artists: [
-      { name: "Yak Mishra", link: "https://www.youtube.com/c/Yaktube" },
-    ],
+      "https://distrokid.imgix.net/http%3A%2F%2Fgather.fandalism.com%2F2209533--EDA0FC44-AF5A-4D2F-BF8CF432ABD7E5F8--0--3367815--troppofinal.png?fm=jpg&q=75&w=800&s=31ab52b5e045f9e69e9be1a14f91b3cc",
+    collab_artists: [],
     platforms: {
       spotify:
-        "https://open.spotify.com/track/6iQL6qYiBzFbAXZPbL9TZ8?autoplay=true",
-      youtube:
-        "https://www.youtube.com/playlist?list=OLAK5uy_k2UG2pKyUbijW0hEtRMg2nzOWQ1mkSn-E",
-      apple:
-        "https://music.apple.com/us/album/counterfeit-linguafranca-remix-single/1714115027",
+        "https://open.spotify.com/track/44DR7gc2YyBbRyUbsmzErf?si=f8c7cb0a67074ea5",
+      youtube: "https://www.youtube.com/watch?v=OWRIj2CjzEs",
+      apple: "https://music.apple.com/us/album/troppo-single/1744664485",
     },
   },
   {
