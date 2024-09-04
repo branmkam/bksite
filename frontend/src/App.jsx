@@ -9,7 +9,7 @@ import FilmScoring from "./components/FilmScoring";
 import Contact from "./components/Contact";
 
 function App() {
-  const langs = ["en", "es", "it"];
+  const langs = Object.keys(data);
   const [page, setPage] = useState(0);
   const [lang, setLang] = useState(langs[0]);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
