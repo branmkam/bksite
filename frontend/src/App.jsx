@@ -245,7 +245,7 @@ function App() {
 
         {/* footer */}
         <div className="fixed bottom-0 z-40 flex flex-col justify-end w-full h-8 p-2 text-sm text-center bg-slate-900 md:bg-black md:text-right animate-[comefrombottom_1s_ease-in-out_0s] md:animate-[comefromright_1s_ease-in-out_0s]">
-          <p>&copy; 2024 brankam</p>
+          <p>&copy; 2025 brankam</p>
         </div>
 
         {/* big div */}
