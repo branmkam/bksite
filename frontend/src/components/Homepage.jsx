@@ -51,7 +51,7 @@ export default function Homepage(props) {
           target="_blank"
         > */}
           <video
-            className="z-0 object-contain h-full brightness-[102%]"
+            className="rounded-xl z-0 object-contain h-full brightness-[102%]"
             src="20250601.mp4"
             autoPlay
             loop
