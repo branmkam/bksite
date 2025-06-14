@@ -6,6 +6,13 @@ const allshows = [
     date: "2023-11-03T19:30:00",
     image: "https://f4.bcbits.com/img/a1709959358_10.jpg",
   },
+  {
+    venue: "London Bridge Pub (open decks)",
+    city: "Raleigh, NC, USA",
+    link: "https://thebridgedtr.com/",
+    date: "2025-06-19T20:00:00",
+    image: "https://f4.bcbits.com/img/a1709959358_10.jpg",
+  }
 ];
 
 export default allshows;
