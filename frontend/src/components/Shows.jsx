@@ -24,7 +24,9 @@ export default function Shows(props) {
           shows.map((s, i) => (
             <div
               key={"show" + i}
-              className={`animitem ${`animate-[bouncein_1s_ease-in-out_${parseInt(1 + i)/10}s]`} flex flex-row items-center justify-between p-2 rounded-lg transition duration-100 ease-in-out bg-opacity-80 hover:bg-opacity-80 bg-slate-900 hover:bg-slate-800`}
+              className={`animitem ${`animate-[bouncein_1s_ease-in-out_${
+                parseInt(1 + i) / 10
+              }s]`} flex flex-row items-center justify-between p-2 rounded-lg transition duration-100 ease-in-out bg-opacity-80 hover:bg-opacity-80 bg-slate-900 hover:bg-slate-800`}
             >
               <span className="px-2 text-base md:text-lg">
                 <a
@@ -32,7 +34,10 @@ export default function Shows(props) {
                   rel="noreferrer"
                   target="_blank"
                   href={
-                    "https://google.com/maps/search/" + s.venue + " " + s.city
+                    "https://google.com/maps/search/" +
+                    s.venue.replace(/\([^)]*\)/g, "").trim() +
+                    ", " +
+                    s.city
                   }
                 >
                   {s.venue}
@@ -75,7 +80,9 @@ export default function Shows(props) {
           pastshows.map((s, i) => (
             <div
               key={"show" + i}
-              className={`animitem ${`animate-[bouncein_1s_ease-in-out_${parseInt(1 + i)/10}s]`}  flex flex-row items-center justify-between p-2 rounded-lg transition duration-100 ease-in-out bg-opacity-80 hover:bg-opacity-80 bg-slate-900 hover:bg-slate-800`}
+              className={`animitem ${`animate-[bouncein_1s_ease-in-out_${
+                parseInt(1 + i) / 10
+              }s]`}  flex flex-row items-center justify-between p-2 rounded-lg transition duration-100 ease-in-out bg-opacity-80 hover:bg-opacity-80 bg-slate-900 hover:bg-slate-800`}
               //${`bg-[url('${s.image}')]`}
             >
               <span className="px-2 text-base md:text-lg">
@@ -84,7 +91,10 @@ export default function Shows(props) {
                   rel="noreferrer"
                   target="_blank"
                   href={
-                    "https://google.com/maps/search/" + s.venue + " " + s.city
+                    "https://google.com/maps/search/" +
+                    s.venue.replace(/\([^)]*\)/g, "").trim() +
+                    ", " +
+                    s.city
                   }
                 >
                   {s.venue}

@@ -12,6 +12,13 @@ const allshows = [
     link: "https://thebridgedtr.com/",
     date: "2025-06-19T20:00:00",
     image: "https://f4.bcbits.com/img/a1709959358_10.jpg",
+  },
+  {
+    venue: "The Pinhook (Blends with Friends)",
+    city: "Durham, NC, USA",
+    link: "https://www.instagram.com/blends_with_friends/",
+    date: "2025-07-02T21:20:00",
+    image: "https://f4.bcbits.com/img/a1709959358_10.jpg",
   }
 ];
 
