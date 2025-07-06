@@ -19,6 +19,13 @@ const allshows = [
     link: "https://www.instagram.com/blends_with_friends/",
     date: "2025-07-02T21:20:00",
     image: "https://f4.bcbits.com/img/a1709959358_10.jpg",
+  },
+  {
+    venue: "London Bridge Pub (with untitled document)",
+    city: "Raleigh, NC, USA",
+    link: "https://thebridgedtr.com/",
+    date: "2025-07-17T20:00:00",
+    image: "https://f4.bcbits.com/img/a1709959358_10.jpg",
   }
 ];
 
