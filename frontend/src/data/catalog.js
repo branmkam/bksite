@@ -2,6 +2,20 @@
 
 const catalog = [
   {
+    name: "London's Lights",
+    type: "single",
+    release_date: "2025-08-15T00:00:00",
+    image:
+      "https://s3.amazonaws.com/gather.fandalism.com/800x800%2D2209533%2D%2DFF30FE10%2D6C7F%2D4466%2D9F05FAA331661759%2D%2D0%2D%2D504327%2D%2Dlondonslightscover.jpg",
+    collab_artists: [],
+    platforms: {
+      spotify:
+        "https://open.spotify.com/album/612dHTRn2A0tolOULThBxz",
+      youtube: "https://www.youtube.com/watch?v=or7v3XEa274",
+      apple: "https://music.apple.com/us/album/londons-lights-single/1828842691",
+    },
+  },
+  {
     name: "Troppo",
     type: "single",
     release_date: "2024-05-24T00:00:00",
