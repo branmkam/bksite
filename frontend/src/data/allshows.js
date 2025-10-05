@@ -33,6 +33,20 @@ const allshows = [
     link: "https://highgardenraleigh.com/",
     date: "2025-08-07T20:30:00",
     image: "https://f4.bcbits.com/img/a1709959358_10.jpg",
+  },
+  {
+    venue: "Highgarden (with untitled document)",
+    city: "Raleigh, NC, USA",
+    link: "https://highgardenraleigh.com/",
+    date: "2025-09-11T21:30:00",
+    image: "https://f4.bcbits.com/img/a1709959358_10.jpg",
+  },
+  {
+    venue: "Highgarden",
+    city: "Raleigh, NC, USA",
+    link: "https://highgardenraleigh.com/",
+    date: "2025-10-07T21:00:00",
+    image: "https://f4.bcbits.com/img/a1709959358_10.jpg",
   }
 ];
 
