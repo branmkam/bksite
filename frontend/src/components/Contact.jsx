@@ -10,7 +10,7 @@ export default function Contact(props) {
   const link = data[`${lang}`].contact_page.link.split("|");
 
   return (
-    <div className="z-20 flex flex-col justify-center w-full h-full pb-8 my-2 contact pt-14 md:py-0">
+    <div className="z-20 flex flex-col items-center justify-center w-full min-h-[95vh] pb-8 my-2 contact pt-14 md:py-0">
       <h1 className="mt-2 text-lg font-bold md:text-xl animate-[fadein_1s_ease-in-out] animitem ">
         {data[`${lang}`].contact_page.title}
       </h1>
@@ -28,10 +28,10 @@ export default function Contact(props) {
         onChange={(e) => setMessage(e.target.value)}
         rows="5"
         placeholder={data[`${lang}`].contact_page.message}
-        className={
-          "w-full md:w-3/4 p-1 mt-2 rounded-xl resize-vertical text-slate-200 bg-slate-900 border-2 animate-[fadein_1s_ease-in-out_0.2s] animitem " +
-          (!message.trim() ? "border-red-500" : "border-slate-600")
-        }
+          className={
+            "w-full md:w-3/4 h-[50vh] p-1 mt-2 rounded-xl resize-vertical text-slate-200 bg-slate-900 border-2 animate-[fadein_1s_ease-in-out_0.2s] animitem " +
+            (!message.trim() ? "border-red-500" : "border-slate-600")
+          }
       />
       <a
         href={
