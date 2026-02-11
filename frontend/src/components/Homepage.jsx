@@ -31,7 +31,7 @@ export default function Homepage(props) {
         setImageIndex((prevIndex) => (prevIndex + 1) % images.length);
         // Fade in
         setFadeClass("opacity-100");
-      }, 500); // Half second for fade transition
+      }, 500);
     }, 4000); // 4 seconds per image
     
     return () => {

@@ -47,7 +47,21 @@ const allshows = [
     link: "https://highgardenraleigh.com/",
     date: "2025-11-06T21:00:00",
     image: "https://f4.bcbits.com/img/a1709959358_10.jpg",
-  }
+  },
+  {
+    venue: "Highgarden",
+    city: "Raleigh, NC, USA",
+    link: "https://highgardenraleigh.com/",
+    date: "2026-03-05T21:00:00",
+    image: "https://f4.bcbits.com/img/a1709959358_10.jpg",
+  },
+  {
+    venue: "Nomadas Coffee",
+    city: "Durham, NC, USA",
+    link: "https://www.nomadascoffee.com/",
+    date: "2026-02-22T13:00:00",
+    image: "https://f4.bcbits.com/img/a1709959358_10.jpg",
+  },
 ];
 
 export default allshows;

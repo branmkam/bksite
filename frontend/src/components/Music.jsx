@@ -13,74 +13,78 @@ export default function Music(props) {
     .slice(0, 6);
 
   return (
-    <div className="z-50 flex flex-col justify-center w-full h-full pb-8 my-2 music pt-14 md:py-0">
-      <p className="my-2 text-lg font-bold md:text-xl">
-        {data[`${lang}`].music_page.newest_title}
-      </p>
-      <div className="grid grid-cols-1 gap-4 pb-8 md:grid-cols-2 lg:grid-cols-3">
-        {timeCatalog.length > 0 ? (
-          timeCatalog.map(function (c, i) {
-            return (
-              <div
-                key={"div-" + c.name}
-                className={
-                  `min-w-[250px] h-[350px] border-yellow-500 my-2 bg-slate-900 bg-opacity-75 p-2 rounded-lg flex flex-col items-center justify-between text-center musicitem ${`animate-[fadein_1s_ease-in-out_${parseInt(1 + i)/10}s]`}`
-                }
-              >
-                <p className="font-semibold text-white md:text-lg">{c.name}</p>
-                <img src={c.image} className="h-44" />
-                <p>
-                  {ParseISO(c.release_date).toLocaleDateString(
-                    [lang, "en-US"],
-                    {
-                      month: "short",
-                      day: "2-digit",
-                      year: "numeric",
-                    }
-                  )}
-                  {" / "}
-                  {c.type}
-                </p>
-                <span className="text-sm">
-                  {c.collab_artists.length > 0 && "ft. "}
-                  {c.collab_artists.length > 0 ? (
-                    c.collab_artists.map((a, i) => (
-                      <span key={c.name + "artist" + a.name}>
-                        <a
-                          href={a.link}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="text-yellow-500 hover:text-yellow-200"
-                        >
-                          {a.name}
-                        </a>
-                        {i < c.collab_artists.length - 1 && ", "}
-                      </span>
-                    ))
-                  ) : (
-                    <span className="text-sm">Solo release</span>
-                  )}
-                </span>
-                <span className="">
-                  {Object.keys(c.platforms).map((p) => (
-                    <a
-                      key={c.name + "platform" + p}
-                      className="m-2 text-xl transition-colors duration-200 ease-in-out md:text-3xl hover:text-yellow-500"
-                      href={c.platforms[p]}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <FontAwesomeIcon icon={symbols[p]} />
-                    </a>
-                  ))}
-                </span>
-              </div>
-            );
-          })
-        ) : (
-          <p className="w-full text-lg">{data[`${lang}`].utils.arent_any}</p>
-        )}
+    <>
+      <div className="z-50 flex flex-col justify-center items-center w-full h-full pb-8 my-2 music pt-14 md:py-0">
+        <p className="my-2 text-2xl font-bold md:text-xl">
+          {data[`${lang}`].music_page.newest_title}
+        </p>
+        <div className="grid grid-cols-1 gap-4 max-w-[1000px] items-center justify-items-center place-content-center pb-8 md:grid-cols-2 lg:grid-cols-3">
+          {timeCatalog.length > 0 ? (
+            timeCatalog.map(function (c, i) {
+              return (
+                <div
+                  key={"div-" + c.name}
+                  className={`min-w-[300px] h-[370px] py-4 border-yellow-500 my-2 bg-slate-900 bg-opacity-75 hover:bg-slate-700/75 transition-colors duration-300 ease-in-out p-2 rounded-lg flex flex-col items-center justify-between text-center musicitem ${`animate-[fadein_1s_ease-in-out_${
+                    parseInt(1 + i) / 10
+                  }s]`}`}
+                >
+                  <p className="font-semibold text-white md:text-lg">
+                    {c.name}
+                  </p>
+                  <img src={c.image} className="h-44" />
+                  <p>
+                    {ParseISO(c.release_date).toLocaleDateString(
+                      [lang, "en-US"],
+                      {
+                        month: "short",
+                        day: "2-digit",
+                        year: "numeric",
+                      }
+                    )}
+                    {" / "}
+                    {c.type}
+                  </p>
+                  <span className="text-sm">
+                    {c.collab_artists.length > 0 && "ft. "}
+                    {c.collab_artists.length > 0 ? (
+                      c.collab_artists.map((a, i) => (
+                        <span key={c.name + "artist" + a.name}>
+                          <a
+                            href={a.link}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-yellow-500 hover:text-yellow-200"
+                          >
+                            {a.name}
+                          </a>
+                          {i < c.collab_artists.length - 1 && ", "}
+                        </span>
+                      ))
+                    ) : (
+                      <span className="text-sm">Solo release</span>
+                    )}
+                  </span>
+                  <span className="">
+                    {Object.keys(c.platforms).map((p) => (
+                      <a
+                        key={c.name + "platform" + p}
+                        className="m-2 text-xl transition-colors duration-200 ease-in-out md:text-3xl hover:text-yellow-500"
+                        href={c.platforms[p]}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <FontAwesomeIcon icon={symbols[p]} />
+                      </a>
+                    ))}
+                  </span>
+                </div>
+              );
+            })
+          ) : (
+            <p className="w-full text-lg">{data[`${lang}`].utils.arent_any}</p>
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 }

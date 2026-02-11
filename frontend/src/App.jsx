@@ -51,12 +51,12 @@ function App() {
       {/* //app div */}
       <div className="w-screen bg-[#000000b4] h-[100vh] overflow-y-scroll fixed top-0 font-afacad text-slate-200 ">
         {/* languages */}
-        <div className="fixed z-50 bg-[#00000099] m-1 flex flex-row justify-start p-0 rounded-lg right-2 animate-[comefromright_1s_ease-in-out_0s]">
+        <div className="fixed z-50 bg-[#00000099] m-1 flex flex-row gap-1 justify-start p-0 rounded-lg right-2 animate-[comefromright_1s_ease-in-out_0s]">
           {langs.map((l) => (
             <span
               key={"lang-" + l}
               className={
-                "z-0 text-sm transition-colors duration-200 ease-in-out hover:text-yellow-500 hover:cursor-pointer m-1 " +
+                "z-0 transition-colors duration-200 ease-in-out md:text-2xl hover:text-yellow-500 hover:cursor-pointer m-1 " +
                 (lang == l && "text-red-500")
               }
               onClick={() => setLang(l)}
