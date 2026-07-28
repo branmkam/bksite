@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState, useEffect } from "react";
 
 import data from "../data/translate.json";
-// import Countdown from "./Countdown";
+import Countdown from "./Countdown";
 
 export default function Homepage({ lang }) {
   const [imageIndex, setImageIndex] = useState(1);
@@ -73,16 +73,16 @@ export default function Homepage({ lang }) {
           target="_blank"
         > */}
         <img
-          className={`rounded-xl z-0 object-contain h-full brightness-[102%] transition-opacity duration-500 ${fadeClass}`}
+          className={`rounded-xl z-0 object-contain h-full brightness-[48%] transition-opacity duration-500 ${fadeClass}`}
           src={`/me${imageIndex}.jpg`}
           alt="brankam"
         />
         {/* </a> */}
-        {/* <Countdown
-          className="absolute flex items-center justify-center w-full h-full text-4xl font-bold text-orange-400 drop-shadow-[8px_35px_10px_rgba(0,0,0,0.1)] align-center md:text-6xl lg:text-8xl"
-          time={"2025-06-24T00:00:00"}
+        <Countdown
+          className="absolute flex items-center justify-center w-full h-full text-4xl font-bold text-orange-400 drop-shadow-[8px_35px_10px_rgba(0,0,0,0.8)] align-center md:text-6xl lg:text-8xl"
+          time={"2026-08-14T00:00:00"}
           seconds
-        /> */}
+        />
       </div>
       <span className="z-50 text-2xl md:text-4xl">
         <a
