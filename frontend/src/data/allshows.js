@@ -62,6 +62,20 @@ const allshows = [
     date: "2026-02-22T13:00:00",
     image: "https://f4.bcbits.com/img/a1709959358_10.jpg",
   },
+  {
+    venue: "Aura",
+    city: "Raleigh, NC, USA",
+    link: "https://www.auraraleigh.com/",
+    date: "2026-07-19T15:00:00",
+    image: "https://f4.bcbits.com/img/a1709959358_10.jpg",
+  },
+  {
+    venue: "Bitter Social (w/ Across the Pond)",
+    city: "Raleigh, NC, USA",
+    link: "https://www.visitraleigh.com/event/take-flight-with-across-the-pond-productions/108960/",
+    date: "2026-08-14T20:00:00",
+    image: "https://f4.bcbits.com/img/a1709959358_10.jpg",
+  },
 ];
 
 export default allshows;
