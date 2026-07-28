@@ -4,9 +4,7 @@ import catalog from "../data/catalog";
 import ParseISO from "../data/ParseISO";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function Music(props) {
-  const { lang } = props;
-
+export default function Music({ lang }) {
   //top 6 newest releases
   let timeCatalog = catalog
     .sort((a, b) => new Date(b.release_date) - new Date(a.release_date))
@@ -39,7 +37,7 @@ export default function Music(props) {
                         month: "short",
                         day: "2-digit",
                         year: "numeric",
-                      }
+                      },
                     )}
                     {" / "}
                     {c.type}
