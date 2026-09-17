@@ -10,7 +10,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState, useEffect } from "react";
 
 import data from "../data/translate.json";
-import Countdown from "./Countdown";
 
 export default function Homepage({ lang }) {
   const [imageIndex, setImageIndex] = useState(1);

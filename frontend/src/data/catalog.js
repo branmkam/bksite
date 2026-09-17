@@ -9,10 +9,10 @@ const catalog = [
       "https://s3.amazonaws.com/gather.fandalism.com/800x800%2D2209533%2D%2DFF30FE10%2D6C7F%2D4466%2D9F05FAA331661759%2D%2D0%2D%2D504327%2D%2Dlondonslightscover.jpg",
     collab_artists: [],
     platforms: {
-      spotify:
-        "https://open.spotify.com/album/612dHTRn2A0tolOULThBxz",
+      spotify: "https://open.spotify.com/album/612dHTRn2A0tolOULThBxz",
       youtube: "https://www.youtube.com/watch?v=or7v3XEa274",
-      apple: "https://music.apple.com/us/album/londons-lights-single/1828842691",
+      apple:
+        "https://music.apple.com/us/album/londons-lights-single/1828842691",
     },
   },
   {
@@ -81,7 +81,7 @@ const catalog = [
       bandcamp: "https://brankam.bandcamp.com/track/charlottean",
     },
   },
-   {
+  {
     name: "Where Have You Been?",
     type: "single",
     release_date: "2026-04-03T00:00:00",
@@ -89,10 +89,29 @@ const catalog = [
       "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/12/30/44/1230440f-0538-ad47-ac1e-483b6f31375b/artwork.jpg/592x592bb.webp",
     collab_artists: [],
     platforms: {
-      spotify:
-        "https://open.spotify.com/album/2ajg2H60kdZEs4h1HwsJPw",
+      spotify: "https://open.spotify.com/album/2ajg2H60kdZEs4h1HwsJPw",
       youtube: "https://www.youtube.com/watch?v=Rpb6SoXP_QA",
-      apple: "https://music.apple.com/us/album/where-have-you-been-single/1882242448",
+      apple:
+        "https://music.apple.com/us/album/where-have-you-been-single/1882242448",
+    },
+  },
+  {
+    name: "Floating",
+    type: "single + ukg remix",
+    release_date: "2026-08-14T00:00:00",
+    image:
+      "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/87/94/b6/8794b607-7059-4868-f222-7aaad04d0cc2/artwork.jpg/592x592bb.webp",
+    collab_artists: [
+      {
+        name: "Kidnxtdoor",
+        link: "https://open.spotify.com/artist/6otlqxdDfU0VOU0ZJVLOXc?si=ab8a838524c24925",
+      },
+    ],
+    platforms: {
+      spotify: "https://open.spotify.com/album/3vNdh8fwu7j7THUf2ErcDq?si=xQdRrbn7Ri-Awd1qFIfiOw",
+      youtube: "https://www.youtube.com/watch?v=jRejHvWHF3E&list=OLAK5uy_nUwBA079zOtC2RmPft7Ybqtsn-zrlpcqI",
+      apple:
+        "https://music.apple.com/us/album/floating-single/6795032262",
     },
   },
 ];
